@@ -55,6 +55,8 @@
           if (ds[k].classList.contains('on') !== on) ds[k].classList.toggle('on', on);
         }
         document.body.classList.toggle('lbx-done', done);
+        var active = !!document.querySelector('[data-lb-part="message"], [data-lb-part="options-group"], [data-lb-part="input-field"]');
+        if (document.body.classList.contains('lbx-active') !== active) document.body.classList.toggle('lbx-active', active);
         var bubbles = document.querySelectorAll('[data-lb-part="message"][data-lb-author="bot"] [data-lb-part="message-bubble"]');
         var afterCard = false;
         for (var q = 0; q < bubbles.length; q++) {
