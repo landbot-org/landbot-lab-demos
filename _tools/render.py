@@ -5,5 +5,5 @@ t = pathlib.Path(__file__).with_name("page-template.html").read_text(encoding="u
 out = (t.replace("{{COMPANY}}", company).replace("{{DOMAIN}}", domain)
          .replace("{{CONFIG_URL}}", f"https://storage.googleapis.com/landbot.pro/v3/{token}/index.json")
          .replace("{{OPEN_DELAY_MS}}", "2500"))
-p = pathlib.Path(__file__).parent.parent / slug / "index.html"
+p = pathlib.Path(__file__).parent.parent / "public" / slug / "index.html"
 p.write_text(out, encoding="utf-8"); print(p)
