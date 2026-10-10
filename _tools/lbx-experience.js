@@ -8,6 +8,7 @@
 (function () {
   var CONFIG = {
     title: 'Best Egg · Check your options',
+    focus: true,                // one question per screen (experience); false = classic chat
     total: 5,
     stepText: 'Step {n} of {total}',
     doneText: 'Your summary',
@@ -19,7 +20,7 @@
   try {
     if (window.__lbxExp) return;
     var stats = window.__lbxExp = { renders: 0 };
-    document.body.classList.add('lbx-exp');
+    document.body.classList.add('lbx-exp'); if (CONFIG.focus) document.body.classList.add('lbx-focus');
     var total = Math.max(1, parseInt(CONFIG.total, 10) || 1);
 
     var head = document.createElement('div');
@@ -55,6 +56,7 @@
           if (ds[k].classList.contains('on') !== on) ds[k].classList.toggle('on', on);
         }
         document.body.classList.toggle('lbx-done', done);
+        if (CONFIG.placeholder) { var ins = document.querySelectorAll('[data-lb-part="input-field"] textarea, [data-lb-part="input-field"] input'); for (var z = 0; z < ins.length; z++) { if (ins[z].getAttribute('placeholder') !== CONFIG.placeholder) ins[z].setAttribute('placeholder', CONFIG.placeholder); } }
         var active = !!document.querySelector('[data-lb-part="message"], [data-lb-part="options-group"], [data-lb-part="input-field"]');
         if (document.body.classList.contains('lbx-active') !== active) document.body.classList.toggle('lbx-active', active);
         var bubbles = document.querySelectorAll('[data-lb-part="message"][data-lb-author="bot"] [data-lb-part="message-bubble"]');

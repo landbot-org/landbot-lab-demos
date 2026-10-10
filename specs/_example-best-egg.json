@@ -1,0 +1,27 @@
+{
+  "key": "best-egg",
+  "company": "Best Egg",
+  "domain": "bestegg.com",
+  "url": "https://www.bestegg.com",
+  "lang": "en",
+  "format": "experience",
+  "title": "Best Egg · Check your options",
+  "palette": {"dark": "#011835", "dark_hover": "#1d4271", "accent": "#2f609f", "accent_soft": "#ebf4ff", "accent_line": "#c9dcf5",
+              "accent_bright": "#7fb2ff", "bg": "#faf7f0", "page_bg": "#faf7f0", "font": "Plus Jakarta Sans"},
+  "greeting": "Hi there! Thinking about a personal loan? I can answer your questions, or show you your options in about a minute.",
+  "cta": "See my options",
+  "questions": [
+    {"id": "amount", "type": "buttons", "text": "Great. How much are you looking to borrow?", "options": ["Under $5k", "$5k to $15k", "$15k to $35k", "Over $35k"], "field": "loan_amount", "emoji": "💰", "label": "Amount"},
+    {"id": "purpose", "type": "buttons", "text": "And what's it for?", "options": ["Debt consolidation", "Credit card payoff", "Home improvement", "Something else"], "field": "loan_purpose", "emoji": "🎯", "label": "Purpose"},
+    {"id": "credit", "type": "buttons", "text": "How would you describe your credit? A rough idea is fine.", "options": ["Excellent", "Good", "Fair", "Not sure"], "field": "credit_band", "emoji": "📊", "label": "Credit"},
+    {"id": "email", "type": "email", "text": "Last one. What's the best email to send your options to?", "field": "email", "emoji": "✉️", "label": "Email"}
+  ],
+  "summary_intro": "Thanks! Here is what Best Egg's team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Best Egg.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want to see your options instead?",
+  "agent_exit": "The visitor wants to check their options, see their rate, apply, or know how much they could borrow.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show Best Egg's marketing team what an AI agent on bestegg.com could do... (2-3 short paragraphs: what you can talk about from their public site, hard rules: never quote rates/fees/prices/amount limits/approval odds, never ask sensitive data, never invent facts, say it is a Landbot demo if asked, 2-3 short sentences per answer, no markdown, end by offering the CTA; then 'Exit as soon as ...')"
+}

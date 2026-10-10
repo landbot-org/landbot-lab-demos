@@ -1,0 +1,79 @@
+{
+  "key": "portillo",
+  "company": "Portillo",
+  "domain": "portillo.cl",
+  "url": "https://www.portillo.cl",
+  "lang": "es",
+  "format": "experience",
+  "title": "Portillo · Encuentra tu auto",
+  "palette": {
+    "dark": "#2a2c30",
+    "dark_hover": "#3a3f47",
+    "accent": "#0078aa",
+    "accent_soft": "#e8f5fb",
+    "accent_line": "#bfe3f3",
+    "accent_bright": "#4fc3f7",
+    "bg": "#fafafa",
+    "page_bg": "#fafafa",
+    "font": "Sora"
+  },
+  "greeting": "¡Hola! ¿Buscas auto nuevo o seminuevo? Te respondo tus dudas o te muestro tus opciones en un minuto.",
+  "cta": "Ver mis opciones",
+  "questions": [
+    {
+      "id": "type",
+      "type": "buttons",
+      "text": "¡Buena! ¿Qué tipo de auto estás buscando?",
+      "options": [
+        "Auto nuevo",
+        "Seminuevo",
+        "Aún no lo sé"
+      ],
+      "field": "car_type",
+      "emoji": "🚗",
+      "label": "Auto"
+    },
+    {
+      "id": "payment",
+      "type": "buttons",
+      "text": "¿Cómo te gustaría pagarlo?",
+      "options": [
+        "Al contado",
+        "Con financiamiento",
+        "Quiero asesoría"
+      ],
+      "field": "payment",
+      "emoji": "💳",
+      "label": "Pago"
+    },
+    {
+      "id": "tradein",
+      "type": "buttons",
+      "text": "¿Tienes un auto para dejar en parte de pago?",
+      "options": [
+        "Sí, quiero tasarlo",
+        "No",
+        "Lo estoy pensando"
+      ],
+      "field": "trade_in",
+      "emoji": "🔄",
+      "label": "Parte de pago"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Última pregunta. ¿A qué email te enviamos tus opciones?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de Portillo al instante:",
+  "summary_marker": "Esto es lo que",
+  "closing": "Esa es la idea: cada visitante atendido y calificado en menos de un minuto, con sus datos ya en tu CRM. Demo preparada por Landbot para Portillo.",
+  "card_badge": "Lead listo · prioridad alta",
+  "error_text": "Eso no parece correcto. ¿Lo revisas?",
+  "agent_error": "Perdona, no te entendí. ¿Quieres ver tus opciones?",
+  "agent_exit": "El visitante quiere cotizar, ver opciones o precios, financiar, tasar su auto o reservar uno.",
+  "agent_instructions": "Eres un asistente de demostración creado por Landbot para mostrarle al equipo de marketing de Portillo lo que un agente de IA podría hacer en portillo.cl. Solo puedes hablar de lo que muestra su página de inicio: Portillo vende autos nuevos y usados, con marcas como Toyota, Peugeot, Hyundai, Citroën, MG y Nissan. Los seminuevos se ven a través de Clicar, con un stock amplio de autos inspeccionados, y se pueden comparar marcas, años y kilometraje y agendar una prueba de manejo. Hay tasación online gratis en unos 2 minutos, opciones de financiamiento, accesorios y repuestos, flotas, y servicio técnico y mantención que se agendan 100% online. Ventas atiende de lunes a viernes de 09:00 a 19:00 y los sábados de 10:00 a 14:00.\n\nReglas estrictas: nunca des precios, cuotas, pies, tasas, bonos, descuentos, stock ni plazos de entrega, aunque aparezcan en la web. Nunca prometas nada, ni aprobación de crédito ni valor de tasación. Nunca pidas datos sensibles como RUT, patente o datos bancarios. Nunca inventes; si no lo sabes, di que un ejecutivo de Portillo puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo ver sus opciones.\n\nSal en cuanto el visitante quiera cotizar, ver opciones o precios, financiar, tasar su auto o reservar uno."
+}

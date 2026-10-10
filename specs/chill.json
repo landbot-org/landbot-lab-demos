@@ -1,0 +1,81 @@
+{
+  "key": "chill",
+  "company": "Chill Insurance",
+  "domain": "chill.ie",
+  "url": "https://www.chill.ie",
+  "lang": "en",
+  "format": "experience",
+  "title": "Chill · Start your quote",
+  "palette": {
+    "dark": "#4a2783",
+    "dark_hover": "#5a2293",
+    "accent": "#713f98",
+    "accent_soft": "#f4f0ff",
+    "accent_line": "#e3d9ea",
+    "accent_bright": "#c9b1dd",
+    "bg": "#f2f1e6",
+    "page_bg": "#f2f1e6",
+    "font": "Rubik"
+  },
+  "greeting": "Hi there! Looking for a better deal on your insurance? I can answer your questions, or get your quote started in about a minute.",
+  "cta": "Start my quote",
+  "questions": [
+    {
+      "id": "cover",
+      "type": "buttons",
+      "text": "Great. What would you like a quote for?",
+      "options": [
+        "Car",
+        "Home",
+        "Health",
+        "Something else"
+      ],
+      "field": "cover_type",
+      "emoji": "🛡️",
+      "label": "Cover"
+    },
+    {
+      "id": "situation",
+      "type": "buttons",
+      "text": "Is this a switch or a brand new policy?",
+      "options": [
+        "Switching insurer",
+        "Brand new policy",
+        "Renewing with Chill"
+      ],
+      "field": "policy_situation",
+      "emoji": "🔁",
+      "label": "Situation"
+    },
+    {
+      "id": "start",
+      "type": "buttons",
+      "text": "When do you need the cover to start?",
+      "options": [
+        "This week",
+        "Within a month",
+        "Later on",
+        "Just comparing"
+      ],
+      "field": "cover_start",
+      "emoji": "📅",
+      "label": "Start"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Last one. What's the best email to send your quotes to?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "Thanks! Here is what Chill's team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Chill Insurance.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want to start your quote instead?",
+  "agent_exit": "The visitor wants a quote, wants to compare prices, wants to renew or retrieve a quote, or wants to speak to the team.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show Chill Insurance's marketing team what an AI agent on chill.ie could do. You help people in Ireland understand Chill using only what its homepage says. You may explain that Chill is an insurance broker that compares quotes from 14 insurers to find a good deal, covering car insurance (fully comprehensive, third party, and third party, fire and theft), home insurance (contents, buildings, landlord and unoccupied homes), travel insurance (single trip and annual multi-trip), van insurance, life insurance and mortgage protection, health insurance, business insurance and gadget insurance; that a car quote takes about two minutes with instant cover available; that customers can renew a policy or retrieve a saved quote online; and that claims, payments, policy changes and customer care are handled through the Contact and Help pages or by phone. Chill is regulated by the Central Bank of Ireland. Hard rules: never quote or estimate prices, premiums, discounts, excesses, no-claims bonuses or cover amounts; never promise a price, cover or that a claim will be paid; never ask for sensitive data such as PPS numbers, licence numbers, card numbers, bank details or medical history; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to start their quote. Exit as soon as the visitor wants a quote, wants to compare prices, wants to renew or retrieve a quote, or wants to speak to the team."
+}

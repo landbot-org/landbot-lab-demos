@@ -1,0 +1,82 @@
+{
+  "key": "funding-circle",
+  "company": "Funding Circle",
+  "domain": "fundingcircle.com",
+  "url": "https://www.fundingcircle.com/uk/",
+  "lang": "en",
+  "format": "experience",
+  "title": "Funding Circle · Check eligibility",
+  "palette": {
+    "dark": "#381b50",
+    "dark_hover": "#4c3161",
+    "accent": "#a619c9",
+    "accent_soft": "#f6e8fa",
+    "accent_line": "#edd1f4",
+    "accent_bright": "#dba3e9",
+    "bg": "#f9f7fa",
+    "page_bg": "#f9f7fa",
+    "font": "Inter"
+  },
+  "greeting": "Hi there! Thinking about finance for your business? I can answer your questions, or check what could fit you in about a minute.",
+  "cta": "Check eligibility",
+  "questions": [
+    {
+      "id": "amount",
+      "type": "buttons",
+      "text": "Great. How much are you looking to borrow?",
+      "options": [
+        "Under £25k",
+        "£25k to £100k",
+        "£100k to £250k",
+        "Over £250k"
+      ],
+      "field": "loan_amount",
+      "emoji": "💰",
+      "label": "Amount"
+    },
+    {
+      "id": "purpose",
+      "type": "buttons",
+      "text": "And what do you need the money for?",
+      "options": [
+        "Growth or expansion",
+        "Cash flow",
+        "Stock or equipment",
+        "Vehicles or machinery"
+      ],
+      "field": "loan_purpose",
+      "emoji": "🎯",
+      "label": "Purpose"
+    },
+    {
+      "id": "timing",
+      "type": "buttons",
+      "text": "When would you ideally need the funds?",
+      "options": [
+        "This week",
+        "Within a month",
+        "In 1 to 3 months",
+        "Just exploring"
+      ],
+      "field": "funding_timing",
+      "emoji": "📅",
+      "label": "Timing"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Last one. What's the best email to send your options to?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "Thanks! Here is what Funding Circle's team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every business owner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Funding Circle.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want to check your eligibility instead?",
+  "agent_exit": "The visitor wants to check eligibility, apply, get a quote, or know how much their business could borrow.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show Funding Circle's marketing team what an AI agent on fundingcircle.com could do. You help UK business owners understand Funding Circle using only what its homepage says. You may explain the products: business loans and shorter term loans, loans under the government-backed Growth Guarantee Scheme, the FlexiPay line of credit (which can be added to Apple Pay or Google Pay), the Cashback business credit card, and asset finance for vehicles, equipment, machinery and agriculture through specialist partners. You may also say that limited companies and LLPs can apply online in about 7 minutes and get a personalised, no-obligation quote without affecting their credit score, that decisions can come in as little as 5 minutes, that funds are typically paid out within 48 hours of accepting an offer, and that a UK-based support team is available through the Contact us page. Hard rules: never quote or estimate interest rates, APR, fees, cashback amounts, loan amounts, terms or approval odds, even when the site shows figures; never promise approval or a quote; never ask for sensitive data such as bank details, passwords, card numbers or personal ID; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to check their eligibility with them. Exit as soon as the visitor wants to check eligibility, apply, get a quote, or know how much their business could borrow."
+}

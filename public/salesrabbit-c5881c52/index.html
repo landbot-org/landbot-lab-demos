@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Concept for SalesRabbit · Landbot</title>
+<style>
+  :root { --bar:#0b0b14; --accent:#7c5cff; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; background:#f8f8f8; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .concept-bar { position:fixed; top:0; left:0; right:0; z-index:1000; display:flex; align-items:center; gap:10px; justify-content:flex-start;
+    padding:9px 16px; background:var(--bar); color:#fff; font-size:13px; line-height:1.3; text-align:center; }
+  .concept-bar b { color:#c9bcff; font-weight:600; }
+  .concept-bar .dot { width:8px; height:8px; border-radius:50%; background:#5ef0a3; box-shadow:0 0 0 4px rgba(94,240,163,.18); flex:none; }
+  .site { position:relative; padding-top:38px; user-select:none; }
+  .site img { display:block; width:100%; height:auto; pointer-events:none; }
+  .site .m { display:none; }
+  .site::after { content:""; position:absolute; inset:38px 0 0 0; } /* nada de la captura es clicable */
+  @media (max-width: 700px) { .site .d { display:none; } .site .m { display:block; } .concept-bar { font-size:12px; } }
+</style>
+</head>
+<body>
+  <div class="concept-bar"><span class="dot"></span><span><b>Concept by Landbot for SalesRabbit</b> · not the live salesrabbit.com · the chat is a working demo</span></div>
+  <div class="site" aria-hidden="true">
+    <img class="d" src="site-desktop.jpg" alt="">
+    <img class="m" src="site-mobile.jpg" alt="">
+  </div>
+  <script>
+    import('https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs').then(function () {
+      var lb = new window.Landbot.Livechat({ configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-3528123-965XJLAII2DDPM1F/index.json' });
+      var opened = false;
+      function openOnce() { if (opened || window.innerWidth <= 700) return; opened = true; lb.open(); }
+      lb.onLoad(function () { setTimeout(openOnce, 2500); });
+      setTimeout(openOnce, 2500 + 6000); // onLoad no reproduce el evento si ya pasó
+    });
+  </script>
+</body>
+</html>

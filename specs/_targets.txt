@@ -1,0 +1,19 @@
+iwoca | iwoca.co.uk | GB | lending | Flexi-Loan application 'in 5 minutes' asks for bank statements or Open Banking; phone line Mon-Fri 9-6 where staff take applications by phone; no chat
+CompanyCam | companycam.com | US | saas | Demo form asks 8 fields (name, phone, email, company, role, company size, industry); recorded-demo option says 'We'll contact you'; no chat
+Utel Universidad | utel.edu.mx | MX | education | Formulario 'Tu siguiente paso empieza aquí' de 7 campos (modalidad, área, programa, nombre, email, país, teléfono); promete 'El asesor en vivo te cont
+Hippo | hippo.com | US | insurance | Quote step 1 is 5 address fields (street, unit, city, state, zip), then multi-step; site promises Hippo experts and a dedicated agent; no phone CTA on
+Funding Circle | fundingcircle.com | GB | lending | 'Apply online in 7 minutes' plus a 30-second eligibility checker; an account manager phones after each application and it hires phone-based Business F
+Credibly | credibly.com | US | lending | Pre-qualification quoted at ~10 minutes (business details, revenue, ID); after approval 'a small business loan advisor will reach out'; no chat seen
+Exoticca | exoticca.com | ES | travel | Chat de asistencia + WhatsApp + 'Habla con un experto' por teléfono; sin formulario de presupuesto
+Portillo | portillo.cl | CL | auto | Formulario de atención de 12 campos (incluye RUT, patente y sucursal) para 'solicitar el contacto de un ejecutivo', sin plazo; WhatsApp vía wa.link; s
+Signaturit | signaturit.com | ES | saas | 'Solicita una demo' y '¿Prefieres que te asesore un experto?'; soporte en un service desk externo, sin chat
+EAE Business School | eae.es | ES | education | Formulario de información con 8+ campos (edad, país, estudios, área, campus, idioma) repetido en la home; 'un asesor académico te contactará'
+Griffith College | griffith.ie | IE | education | Contact form runs 11+ fields (employment status, EU national, living in Ireland, campus...) with a 'Request Call Back' option; no chat or WhatsApp; 3 
+Chill Insurance | chill.ie | IE | insurance | Quote journeys on separate subdomains (ui.chill.ie / hfq.chill.ie) state 'we may contact you by phone, SMS or email about the quote'; human live chat 
+Euroinnova | euroinnova.com | ES | education | 'Solicitar información' en la cabecera y 'en breve nos pondremos en contacto contigo'; dos teléfonos, sin chat de captación
+Animal Friends | animalfriends.co.uk | GB | insurance | Pet insurer: quote on quote.animalfriends.co.uk, live chat for 'everyday queries' and a 6-field contact form; single phone line open Mon-Fri 9-5 only
+Obie Insurance | obieinsurance.com | US | insurance | Landlord quote is a multi-step request form; phone 773-820-7132 (M-F 9am-8pm ET); hiring an Insurance Sales Specialist
+Constructora Marval | marval.com.co | CO | real_estate | Quiz de 5-6 pasos (ciudad, presupuesto, entrega, ingresos, cuota inicial) más formulario de 7 campos con tipo y número de documento; 'un asesor te con
+SalesRabbit | salesrabbit.com | US | saas | Demo form asks 9 fields incl. industry, number of field reps and 8 add-on checkboxes plus SMS consent; no chat; SDR roles posted
+Evlo (Everyday Loans) | evlo.co.uk | GB | lending | Online application gives a conditional decision, then a branch phones within minutes and books a face-to-face meeting of up to 45 min; no chat on the 
+Fullstack Academy | fullstackacademy.com | US | education | 'Get More Info' is a 4-step quiz (for myself/company, subject, part/full-time, skill level) before contact details; separate Schedule a call page; no 

@@ -1,0 +1,81 @@
+{
+  "key": "fullstack",
+  "company": "Fullstack Academy",
+  "domain": "fullstackacademy.com",
+  "url": "https://www.fullstackacademy.com",
+  "lang": "en",
+  "format": "chat",
+  "title": "Fullstack Academy · Find your bootcamp",
+  "palette": {
+    "dark": "#18191b",
+    "dark_hover": "#2a2c2f",
+    "accent": "#dc1515",
+    "accent_soft": "#fdeaea",
+    "accent_line": "#f6c0c0",
+    "accent_bright": "#ff5c5c",
+    "bg": "#f2f5f5",
+    "page_bg": "#f2f5f5",
+    "font": "Space Grotesk"
+  },
+  "greeting": "Hi there! Thinking about a tech bootcamp? I can answer your questions, or help you find the right program in about a minute.",
+  "cta": "Find my program",
+  "questions": [
+    {
+      "id": "track",
+      "type": "buttons",
+      "text": "Great. Which track interests you most?",
+      "options": [
+        "Software engineering",
+        "Cybersecurity",
+        "Data analytics",
+        "AI & machine learning"
+      ],
+      "field": "track",
+      "emoji": "💻",
+      "label": "Track"
+    },
+    {
+      "id": "experience",
+      "type": "buttons",
+      "text": "How much tech experience do you have?",
+      "options": [
+        "Total beginner",
+        "Some self-taught",
+        "Working in tech"
+      ],
+      "field": "experience_level",
+      "emoji": "📈",
+      "label": "Experience"
+    },
+    {
+      "id": "timing",
+      "type": "buttons",
+      "text": "When are you hoping to start?",
+      "options": [
+        "Within a month",
+        "In 1 to 3 months",
+        "Later this year",
+        "Just exploring"
+      ],
+      "field": "start_timing",
+      "emoji": "🗓️",
+      "label": "Timing"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Last one. What's the best email to send your program details to?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "Thanks! Here is what Fullstack Academy's admissions team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Fullstack Academy.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want me to help you find your program instead?",
+  "agent_exit": "The visitor wants to find a program, apply, get more info or schedule a call with an advisor.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show Fullstack Academy's marketing and admissions team what an AI agent on fullstackacademy.com could do.\n\nYou may talk only about what is visible on their site: Fullstack Academy runs live online tech bootcamps: a Software Engineering bootcamp (full-time and part-time), a beginner coding bootcamp, an AI & Machine Learning bootcamp, a Cybersecurity bootcamp and a Data Analytics bootcamp; it shares student reviews, success stories and hiring outcomes, offers payment options, and has an admissions process; to get started people get more info, apply or schedule a call with an advisor.\n\nHard rules: never quote prices, fees, scholarship amounts, discounts, start dates or admission guarantees; if asked, say an admissions advisor will confirm that. Never ask for sensitive data (ID numbers, bank details, health). Never invent facts that are not on the site; if you don't know, say so and offer to help them find their program. If asked, say you are a demo built by Landbot. Answer in 2-3 short sentences, no markdown or lists, and end most answers by offering to help them find their program. Never promise jobs, salaries or hiring results.\n\nExit as soon as the visitor wants to find a program, apply, get more info, ask about tuition or dates for their case, or schedule a call with an advisor."
+}

@@ -1,0 +1,82 @@
+{
+  "key": "griffith",
+  "company": "Griffith College",
+  "domain": "griffith.ie",
+  "url": "https://www.griffith.ie",
+  "lang": "en",
+  "format": "chat",
+  "title": "Griffith College · Find your course",
+  "palette": {
+    "dark": "#231f20",
+    "dark_hover": "#3a3536",
+    "accent": "#e81e25",
+    "accent_soft": "#fdeced",
+    "accent_line": "#f8c3c5",
+    "accent_bright": "#ff6a6f",
+    "bg": "#f3f3f3",
+    "page_bg": "#f3f3f3",
+    "font": "Source Sans 3"
+  },
+  "greeting": "Hi there! Thinking about studying at Griffith College? I can answer your questions, or help you find the right course in about a minute.",
+  "cta": "Find my course",
+  "questions": [
+    {
+      "id": "level",
+      "type": "buttons",
+      "text": "Great. What level are you looking at?",
+      "options": [
+        "Undergraduate",
+        "Postgraduate",
+        "Professional",
+        "Short course"
+      ],
+      "field": "study_level",
+      "emoji": "🎓",
+      "label": "Level"
+    },
+    {
+      "id": "area",
+      "type": "buttons",
+      "text": "And which area interests you most?",
+      "options": [
+        "Business",
+        "Computing",
+        "Law",
+        "Design & media"
+      ],
+      "field": "study_area",
+      "emoji": "📚",
+      "label": "Area"
+    },
+    {
+      "id": "start",
+      "type": "buttons",
+      "text": "When would you like to start?",
+      "options": [
+        "As soon as I can",
+        "Next intake",
+        "Within a year",
+        "Just exploring"
+      ],
+      "field": "start_timing",
+      "emoji": "🗓️",
+      "label": "Start"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Last one. What's the best email to send your course options to?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "Thanks! Here is what Griffith College's admissions team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Griffith College.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want me to help you find your course instead?",
+  "agent_exit": "The visitor wants to find a course, apply, request information or talk to admissions.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show Griffith College's marketing and admissions team what an AI agent on griffith.ie could do.\n\nYou may talk only about what is visible on their site: Griffith College is a private college in Ireland with campuses in Dublin, Cork and Limerick; it offers undergraduate, postgraduate, part-time, professional, microcredential, short, Springboard+ and blended & online courses; there is a CAO Hub, accommodation, disability supports, campus life and a dedicated area for international students; to get started people find a course, apply or contact admissions.\n\nHard rules: never quote prices, fees, scholarship amounts, discounts, start dates or admission guarantees; if asked, say the admissions team will confirm that. Never ask for sensitive data (ID numbers, bank details, health). Never invent facts that are not on the site; if you don't know, say so and offer to help them find their course. If asked, say you are a demo built by Landbot. Answer in 2-3 short sentences, no markdown or lists, and end most answers by offering to help them find their course.\n\nExit as soon as the visitor wants to find a course, apply, request information, ask about fees for their case or talk to admissions."
+}

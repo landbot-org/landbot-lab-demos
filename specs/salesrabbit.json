@@ -1,0 +1,82 @@
+{
+  "key": "salesrabbit",
+  "company": "SalesRabbit",
+  "domain": "salesrabbit.com",
+  "url": "https://salesrabbit.com",
+  "lang": "en",
+  "format": "chat",
+  "title": "SalesRabbit · Book a demo",
+  "palette": {
+    "dark": "#07071e",
+    "dark_hover": "#1d1d3a",
+    "accent": "#ce181e",
+    "accent_soft": "#fff0f0",
+    "accent_line": "#f8c9ca",
+    "accent_bright": "#ff5a55",
+    "bg": "#f8f8f8",
+    "page_bg": "#f8f8f8",
+    "font": "Archivo"
+  },
+  "greeting": "Hey there! Running a field sales team? Ask me anything about SalesRabbit, or let's set you up with a quick demo.",
+  "cta": "Book a demo",
+  "questions": [
+    {
+      "id": "industry",
+      "type": "buttons",
+      "text": "Nice. What industry do your reps sell in?",
+      "options": [
+        "Roofing",
+        "Solar",
+        "Pest or security",
+        "Something else"
+      ],
+      "field": "industry",
+      "emoji": "🏘️",
+      "label": "Industry"
+    },
+    {
+      "id": "reps",
+      "type": "buttons",
+      "text": "How many reps are on your team?",
+      "options": [
+        "1 to 10",
+        "11 to 50",
+        "51 to 200",
+        "More than 200"
+      ],
+      "field": "rep_count",
+      "emoji": "👥",
+      "label": "Reps"
+    },
+    {
+      "id": "goal",
+      "type": "buttons",
+      "text": "What's your main goal right now?",
+      "options": [
+        "Find better leads",
+        "Manage territories",
+        "Motivate my reps",
+        "Close deals faster"
+      ],
+      "field": "main_goal",
+      "emoji": "🎯",
+      "label": "Goal"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Last one. What's your work email so we can send the demo details?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "Thanks! Here is what SalesRabbit's team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for SalesRabbit.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want to book a demo instead?",
+  "agent_exit": "The visitor wants a demo, pricing, or to talk to sales.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show SalesRabbit's marketing team what an AI agent on salesrabbit.com could do. You may only talk about what their homepage shows: SalesRabbit is an all-in-one platform for field and door-to-door sales teams in roofing, solar, telecom and fiber, pest control, home security, HVAC and more. It covers canvassing and territory mapping, lead management, DataGrid AI buyer scores that use machine learning to find likely customers, Amplify reporting and gamification, a Scheduler that syncs with Google or Outlook calendars, Digital Contracts with e-signatures, Movers data on new homeowners, and storm and weather overlays. RoofLink is its roofing CRM and SalesRabbit Lite is a free entry app. There are plans for enterprise, small and medium businesses and individuals, and it is trusted by over 85,000 sales professionals.\n\nHard rules: never quote prices, plans or discounts, and never promise results, features or timelines. Never ask for sensitive data such as passwords or payment details. Never invent facts; if you don't know, say the SalesRabbit team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to book a demo.\n\nExit as soon as the visitor wants a demo, asks about pricing, or wants to talk to sales."
+}

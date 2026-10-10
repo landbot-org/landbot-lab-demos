@@ -1,0 +1,81 @@
+{
+  "key": "animal-friends",
+  "company": "Animal Friends",
+  "domain": "animalfriends.co.uk",
+  "url": "https://www.animalfriends.co.uk",
+  "lang": "en",
+  "format": "experience",
+  "title": "Animal Friends · Get a quote",
+  "palette": {
+    "dark": "#212529",
+    "dark_hover": "#343a40",
+    "accent": "#ea0074",
+    "accent_soft": "#feedf5",
+    "accent_line": "#fbcce3",
+    "accent_bright": "#f68cc0",
+    "bg": "#f8f9fa",
+    "page_bg": "#f8f9fa",
+    "font": "Nunito"
+  },
+  "greeting": "Hi there! Looking for the right cover for your pet? I can answer your questions, or get your quote started in about a minute.",
+  "cta": "Get a quote",
+  "questions": [
+    {
+      "id": "pet",
+      "type": "buttons",
+      "text": "Lovely. Who would you like to cover?",
+      "options": [
+        "A dog",
+        "A cat",
+        "A horse",
+        "More than one pet"
+      ],
+      "field": "pet_type",
+      "emoji": "🐾",
+      "label": "Pet"
+    },
+    {
+      "id": "age",
+      "type": "buttons",
+      "text": "And how old is your pet?",
+      "options": [
+        "Under 1 year",
+        "1 to 7 years",
+        "8 years or older"
+      ],
+      "field": "pet_age",
+      "emoji": "🎂",
+      "label": "Age"
+    },
+    {
+      "id": "cover",
+      "type": "buttons",
+      "text": "What kind of cover are you after?",
+      "options": [
+        "Lifetime",
+        "Time Limited",
+        "Accident Only",
+        "Not sure yet"
+      ],
+      "field": "cover_type",
+      "emoji": "🛡️",
+      "label": "Cover"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Last one. What's the best email to send your quote to?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "Thanks! Here is what Animal Friends' team would receive, instantly:",
+  "summary_marker": "Here is what",
+  "closing": "That's the idea: every pet owner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Animal Friends.",
+  "card_badge": "Lead ready · priority high",
+  "error_text": "That doesn't look right. Could you check it?",
+  "agent_error": "Sorry, I didn't catch that. Want to get a quote instead?",
+  "agent_exit": "The visitor wants a quote, wants to compare cover levels for their pet, or wants to buy a policy.",
+  "agent_instructions": "You are a demo assistant built by Landbot to show Animal Friends' marketing team what an AI agent on animalfriends.co.uk could do. You help UK pet owners understand Animal Friends using only what its homepage says. You may explain that it insures dogs, cats and horses, including puppies, kittens and older pets, and the four policy types it describes: Accident Only (accidents, not illness), Time Limited (each new condition covered for 12 months or until the cover limit), Max Benefit and Lifetime; that what you can claim for is set out in each policy's terms and conditions; that customers have extras such as Joii vet video consultations, an online pet pharmacy and pet help and advice; that Animal Friends donates to animal welfare and conservation charities; that existing customers can log into their account; and that Help and Contact are linked on the site. Hard rules: never quote or estimate prices, premiums, excesses, cover limits, vet fee amounts or what a claim would pay; never promise cover, a price or that a claim will be paid; never ask for sensitive data such as card numbers, bank details, passwords or your pet's medical records; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to get their quote started. Exit as soon as the visitor wants a quote, wants to compare cover levels for their pet, or wants to buy a policy."
+}

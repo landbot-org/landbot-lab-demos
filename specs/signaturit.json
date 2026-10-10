@@ -1,0 +1,82 @@
+{
+  "key": "signaturit",
+  "company": "Signaturit",
+  "domain": "signaturit.com",
+  "url": "https://www.signaturit.com/es/",
+  "lang": "es",
+  "format": "chat",
+  "title": "Signaturit · Solicita una demo",
+  "palette": {
+    "dark": "#030352",
+    "dark_hover": "#05057a",
+    "accent": "#0a0af4",
+    "accent_soft": "#f2f2fe",
+    "accent_line": "#cecef5",
+    "accent_bright": "#a6a6f4",
+    "bg": "#f5f5ff",
+    "page_bg": "#f5f5ff",
+    "font": "Outfit"
+  },
+  "greeting": "¡Hola! ¿Quieres firmar, verificar o certificar documentos en digital? Pregúntame lo que quieras o te organizo una demo.",
+  "cta": "Solicitar una demo",
+  "questions": [
+    {
+      "id": "usecase",
+      "type": "buttons",
+      "text": "¡Genial! ¿Qué necesitas resolver?",
+      "options": [
+        "Firma electrónica",
+        "Verificar identidad",
+        "Email/SMS certificado",
+        "Otro caso"
+      ],
+      "field": "use_case",
+      "emoji": "🧩",
+      "label": "Caso de uso"
+    },
+    {
+      "id": "volume",
+      "type": "buttons",
+      "text": "¿Cuántos documentos gestionáis al mes?",
+      "options": [
+        "Menos de 50",
+        "50 a 500",
+        "Más de 500",
+        "No lo sé aún"
+      ],
+      "field": "monthly_volume",
+      "emoji": "📄",
+      "label": "Volumen"
+    },
+    {
+      "id": "size",
+      "type": "buttons",
+      "text": "¿Cuántas personas trabajan en tu empresa?",
+      "options": [
+        "1 a 49",
+        "50 a 249",
+        "250 a 999",
+        "1.000 o más"
+      ],
+      "field": "company_size",
+      "emoji": "🏢",
+      "label": "Empresa"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Última pregunta. ¿Cuál es tu email de trabajo para enviarte los detalles?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de Signaturit al instante:",
+  "summary_marker": "Esto es lo que",
+  "closing": "Esa es la idea: cada visitante atendido y cualificado en menos de un minuto, con sus datos ya en tu CRM. Demo preparada por Landbot para Signaturit.",
+  "card_badge": "Lead listo · prioridad alta",
+  "error_text": "Eso no parece correcto. ¿Lo revisas?",
+  "agent_error": "Perdona, no te he entendido. ¿Quieres solicitar una demo?",
+  "agent_exit": "El visitante quiere una demo, precios, probar la plataforma o hablar con ventas.",
+  "agent_instructions": "Eres un asistente de demostración creado por Landbot para enseñar al equipo de marketing de Signaturit lo que un agente de IA podría hacer en signaturit.com. Solo puedes hablar de lo que muestra su página de inicio: Signaturit Group, ahora parte de Namirial, es una plataforma europea todo en uno para firmar, verificar, archivar y acelerar transacciones digitales. Ofrece firma electrónica, verificación de identidad y KYC, identificación remota por vídeo, emisión y gestión de certificados cualificados eIDAS, email y SMS certificados, notificaciones electrónicas, verificación de documentos y preservación digital. Cumple eIDAS y RGPD, tiene más de 20 años de experiencia, integraciones como API, Zapier, Google Docs y SAP, y soluciones por sector (inmobiliaria, seguros, servicios financieros, logística con eCMR, entre otros) y por caso de uso (legal, RRHH, compras, ventas).\n\nReglas estrictas: nunca des precios, planes, descuentos ni condiciones de la prueba gratis, y nunca prometas plazos, resultados ni validez legal en un caso concreto. Nunca pidas datos sensibles como DNI, NIE, documentos o datos bancarios. Nunca inventes; si no lo sabes, di que el equipo de Signaturit puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo solicitar una demo.\n\nSal en cuanto el visitante quiera una demo, pregunte por precios, quiera probar la plataforma o hablar con ventas."
+}

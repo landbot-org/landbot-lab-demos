@@ -1,0 +1,82 @@
+{
+  "key": "marval",
+  "company": "Constructora Marval",
+  "domain": "marval.com.co",
+  "url": "https://www.marval.com.co",
+  "lang": "es",
+  "format": "experience",
+  "title": "Marval · Encuentra tu hogar",
+  "palette": {
+    "dark": "#00305f",
+    "dark_hover": "#0b4278",
+    "accent": "#0071cf",
+    "accent_soft": "#eff5ff",
+    "accent_line": "#d6e3fb",
+    "accent_bright": "#6ebeff",
+    "bg": "#f7f7f7",
+    "page_bg": "#f7f7f7",
+    "font": "Work Sans"
+  },
+  "greeting": "¡Hola! ¿Buscas vivienda nueva? Te ayudo con tus dudas o te muestro los proyectos Marval que encajan contigo en un minuto.",
+  "cta": "Ver mis opciones",
+  "questions": [
+    {
+      "id": "budget",
+      "type": "buttons",
+      "text": "¡Genial! ¿Cuál es tu presupuesto para la vivienda?",
+      "options": [
+        "Hasta $300 millones",
+        "$300 a $500 millones",
+        "$500 a $800 millones",
+        "Más de $800 millones"
+      ],
+      "field": "budget",
+      "emoji": "💰",
+      "label": "Presupuesto"
+    },
+    {
+      "id": "timing",
+      "type": "buttons",
+      "text": "¿Para cuándo te quieres mudar?",
+      "options": [
+        "Lo antes posible",
+        "En 6 a 12 meses",
+        "En 1 a 2 años",
+        "Más adelante"
+      ],
+      "field": "move_timing",
+      "emoji": "📅",
+      "label": "Mudanza"
+    },
+    {
+      "id": "payment",
+      "type": "buttons",
+      "text": "¿Cómo piensas pagarla?",
+      "options": [
+        "Con subsidio",
+        "Con crédito",
+        "De contado",
+        "Aún no lo sé"
+      ],
+      "field": "payment",
+      "emoji": "🏦",
+      "label": "Pago"
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "text": "Última pregunta. ¿A qué email te enviamos tus opciones?",
+      "field": "email",
+      "emoji": "✉️",
+      "label": "Email"
+    }
+  ],
+  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de Marval al instante:",
+  "summary_marker": "Esto es lo que",
+  "closing": "Esa es la idea: cada visitante atendido y calificado en menos de un minuto, con sus datos ya en tu CRM. Demo preparada por Landbot para Constructora Marval.",
+  "card_badge": "Lead listo · prioridad alta",
+  "error_text": "Eso no parece correcto. ¿Lo revisas?",
+  "agent_error": "Perdona, no te entendí. ¿Quieres ver tus opciones?",
+  "agent_exit": "El visitante quiere ver proyectos o precios, cotizar, hablar con un asesor o saber qué vivienda encaja con su presupuesto.",
+  "agent_instructions": "Eres un asistente de demostración creado por Landbot para mostrarle al equipo de marketing de Constructora Marval lo que un agente de IA podría hacer en marval.com.co. Solo puedes hablar de lo que muestra su página de inicio: Marval construye vivienda nueva en Colombia, con proyectos en varias ciudades, lanzamientos sobre planos y megaproyectos. Tiene un canal de ventas digitales para comprar vivienda 100% en línea, siempre acompañado de un asesor, además de salas de ventas y una feria digital. Al pago del inmueble se pueden abonar cesantías y subsidios de vivienda familiar, y los pagos se pueden hacer en línea. Sus proyectos cuentan con certificaciones LEED, EDGE y Casa Colombia, y existe el programa Amigos Marval para referidos. La oficina principal está en Bucaramanga.\n\nReglas estrictas: nunca des precios, cuotas, tasas, valores de subsidio, condiciones de crédito, disponibilidad ni fechas de entrega, aunque aparezcan en la web. Nunca prometas nada, ni aprobación de crédito ni de subsidio. Nunca pidas datos sensibles como cédula, ingresos exactos o datos bancarios. Nunca inventes; si no lo sabes, di que un asesor de Marval puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo ver sus opciones.\n\nSal en cuanto el visitante quiera ver proyectos o precios, cotizar, hablar con un asesor o saber qué vivienda encaja con su presupuesto."
+}
