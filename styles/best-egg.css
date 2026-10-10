@@ -1,0 +1,79 @@
+/* lb-style: bestegg-demo 2026-10-10 */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --background:#faf7f0 !important;
+  --select-content-background:#ffffff !important;
+  --select-item-background-default:#ffffff !important;
+  --foreground:#011835 !important;
+  --muted:#c5cfd9 !important;
+  --muted-foreground:#4a5466 !important;
+  --select-item-color-default:#011835 !important;
+  --select-item-background-hover:#ebf4ff !important;
+  --border:#e3e8ee !important;
+  --select-content-border:#c5cfd9 !important;
+  --button-color-primary-default:#ffffff !important;
+  --button-border-color-primary-default:#2f609f !important;
+  --button-font-color-primary-default:#092951 !important;
+  --chat-bubble-color-font-bot:#011835 !important;
+  --chat-bubble-surface-user:#011835 !important;
+  --chat-bubble-border-color-user:#011835 !important;
+  --chat-bubble-color-font-user:#ffffff !important;
+  --input-background-default:#ffffff !important;
+  --textarea-background-default:#ffffff !important;
+  --select-trigger-background-default:#ffffff !important;
+  --input-border-color-default:#c5cfd9 !important;
+  --textarea-border-color-default:#c5cfd9 !important;
+  --select-trigger-border-default:#c5cfd9 !important;
+  --input-color-text-default:#011835 !important;
+  --textarea-color-text-default:#011835 !important;
+  --select-trigger-color-value:#011835 !important;
+  --select-trigger-color-placeholder:#4a5466 !important;
+  --web-chat-header-background:#011835 !important;
+  --web-chat-header-text-color:#ffffff !important;
+  --font-family-sans:"Plus Jakarta Sans", system-ui, sans-serif !important;
+  --font-size:16px !important;
+}
+
+/* ANCHORS */
+[data-lb-part="message-text"] { font-family:"Plus Jakarta Sans",system-ui,sans-serif; line-height:1.55; }
+[data-lb-part="message"][data-lb-author="bot"] [data-lb-part="message-bubble"] {
+  background:#ffffff; color:#011835; border:1px solid #e3e8ee; border-radius:18px 18px 18px 6px;
+  padding:14px 18px; box-shadow:0 6px 18px rgba(1,24,53,.07); animation:lbIn .35s ease-out both;
+}
+[data-lb-part="message"][data-lb-author="user"] [data-lb-part="message-bubble"] {
+  border-radius:18px 18px 6px 18px; padding:12px 18px; box-shadow:0 6px 16px rgba(1,24,53,.18); animation:lbIn .25s ease-out both;
+}
+@keyframes lbIn { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+[data-lb-part="options-group"] { gap:10px; }
+[data-lb-part="option-button"] {
+  background:#ffffff; color:#092951; border:1.5px solid #2f609f; border-radius:999px; font-weight:600;
+  padding:12px 20px; margin-bottom:8px; transition:background .18s, color .18s, transform .18s, box-shadow .18s;
+}
+[data-lb-part="option-button"]:hover {
+  background:#2f609f; color:#ffffff; transform:translateY(-1px); box-shadow:0 8px 18px rgba(47,96,159,.28);
+}
+[data-lb-part="option-button"][data-lb-state="selected"] { background:#011835; color:#fff; border-color:#011835; }
+[data-lb-part="options-prompt"] { color:#011835; font-weight:700; }
+[data-lb-part="input-field"],[data-lb-part="free-text"] { background:#fff; border:1.5px solid #c5cfd9; border-radius:14px; }
+[data-lb-part="text-input"][data-lb-state="active"] [data-lb-part="input-field"] { border-color:#2f609f; box-shadow:0 0 0 4px rgba(47,96,159,.15); }
+[data-lb-part="text-input"][data-lb-state="error"] [data-lb-part="input-field"] { border-color:#c2410c; box-shadow:0 0 0 4px rgba(194,65,12,.12); }
+[data-lb-part="input-error"] { color:#c2410c; font-weight:500; }
+[data-lb-part="input-submit"] { background:#2f609f; color:#fff; border-radius:12px; }
+[data-lb-part="input-submit"]:hover { background:#1d4271; }
+[data-lb-part="header"] { box-shadow:0 2px 12px rgba(1,24,53,.25); }
+[data-lb-part="window"] { border-radius:20px; overflow:hidden; }
+[data-lb-part="message-timestamp"],[data-lb-part="branding"] { color:#4a5466; }
+[data-lb-part="launcher"] { background:#011835; box-shadow:0 10px 24px rgba(1,24,53,.35); }
+
+/* Back button visible on phones (off-catalog selector, fragile) */
+div:has(> button[data-slot="button"][data-size="sm"][data-variant="ghost"]) { opacity:1 !important; }
+button[data-slot="button"][data-size="sm"][data-variant="ghost"] { color:#2f609f; font-weight:600; }
+
+/* SCROLLBARS (light) */
+* { scrollbar-width: thin; scrollbar-color: #c5cfd9 transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: #c5cfd9; border-radius: 8px; }
+*::-webkit-scrollbar-thumb:hover { background: #9aa8b8; }
+@media (prefers-reduced-motion: reduce) { * { animation:none !important; transition:none !important; } }
