@@ -1,0 +1,115 @@
+{
+ "key": "best-egg",
+ "company": "Best Egg",
+ "domain": "bestegg.com",
+ "url": "https://www.bestegg.com",
+ "lang": "en",
+ "format": "experience",
+ "title": "Best Egg · Check your options",
+ "palette": {
+  "dark": "#011835",
+  "dark_hover": "#1d4271",
+  "accent": "#2f609f",
+  "accent_soft": "#ebf4ff",
+  "accent_line": "#c9dcf5",
+  "accent_bright": "#7fb2ff",
+  "bg": "#faf7f0",
+  "page_bg": "#faf7f0",
+  "font": "Plus Jakarta Sans"
+ },
+ "greeting": "Hi there. Thinking about a personal loan? Answer four quick questions and see where you stand, or ask me anything first.",
+ "cta": "See my options",
+ "questions": [
+  {
+   "id": "amount",
+   "type": "buttons",
+   "text": "How much are you looking to borrow?",
+   "options": [
+    "Under $5k",
+    "$5k to $15k",
+    "$15k to $35k",
+    "Over $35k"
+   ],
+   "field": "loan_amount",
+   "emoji": "💰",
+   "label": "Amount"
+  },
+  {
+   "id": "purpose",
+   "type": "buttons",
+   "text": "What would the loan be for?",
+   "options": [
+    "Pay off credit cards",
+    "Consolidate debt",
+    "Home improvement",
+    "Fund my business"
+   ],
+   "field": "loan_purpose",
+   "emoji": "🎯",
+   "label": "Purpose",
+   "disqualify": [
+    3
+   ]
+  },
+  {
+   "id": "credit",
+   "type": "buttons",
+   "text": "How would you describe your credit? A rough idea is fine.",
+   "options": [
+    "Excellent",
+    "Good",
+    "Fair",
+    "Not sure"
+   ],
+   "field": "credit_band",
+   "emoji": "📊",
+   "label": "Credit"
+  },
+  {
+   "id": "timing",
+   "type": "buttons",
+   "text": "When would you like the money?",
+   "options": [
+    "This week",
+    "This month",
+    "In a few months",
+    "Just comparing"
+   ],
+   "field": "timing",
+   "emoji": "⏱️",
+   "label": "Timing",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Here is what Best Egg's team would receive:",
+ "summary_marker": "Here is what",
+ "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Best Egg.",
+ "card_badge": "Lead ready · priority high",
+ "error_text": "That doesn't look right. Could you check it?",
+ "agent_error": "Sorry, I didn't catch that. Want to see your options instead?",
+ "agent_exit": "The visitor wants to check their options, see their rate, apply, or know how much they could borrow.",
+ "agent_instructions": "You are a demo assistant built by Landbot to show Best Egg's marketing team what an AI agent on bestegg.com could do. You speak to a visitor who is considering a Best Egg personal loan.\n\nYour job: answer the visitor's questions briefly and warmly, then guide them toward checking their options, which is where their details are collected and qualified.\n\nWhat you can talk about, in general terms only:\n- Best Egg offers personal loans for things like debt consolidation, credit card payoff, home improvement and large purchases.\n- The way to see a personal rate and amount is to check options; the online rate check asks for amount, purpose, employment, income, housing costs and personal details.\n- Customers can also call Best Egg; say the number is on the website.\n\nHard rules:\n- Never quote an APR, interest rate, fee, loan amount limit, term, approval odds or credit score requirement. If asked, say these depend on the visitor's profile and the quickest way to see them is to check their options.\n- Never promise approval. Never give financial or legal advice.\n- Never ask for sensitive data (SSN, date of birth, bank details) in the chat.\n- Never invent facts about Best Egg. If you do not know, say so and offer to check options or call.\n- If someone asks, say clearly this is a demo prepared by Landbot, not Best Egg's official assistant.\n- Keep each answer to 2 or 3 short sentences. No markdown, no lists.\n- End most answers by offering to check their options.\n\nExit as soon as the visitor wants to check their options, see their rate, apply, or asks how much they could borrow.",
+ "slug": "best-egg-01081900",
+ "routing": {
+  "file_title": "Your request",
+  "file_done": "What Best Egg's team receives",
+  "route_label": "Route",
+  "name_label": "Name",
+  "phone_label": "Phone",
+  "hot_text": "You look like a strong fit. A loan specialist can call you today to walk you through your options.",
+  "name_q": "Who should they ask for?",
+  "phone_q": "And the best number to reach you?",
+  "warm_text": "No rush. We can send your options by email so you can compare in your own time.",
+  "email_q": "Where should we send them?",
+  "cold_text": "Best Egg offers personal loans, so business funding isn't something we can help with here. A business lender will be a better fit.",
+  "hot_label": "Hot lead. Call today",
+  "warm_label": "Nurture. Email sequence",
+  "cold_label": "Not a fit. Business funding",
+  "hot_closing": "In the real version, this lead lands in your CRM and a specialist is alerted right away. Demo prepared by Landbot for Best Egg.",
+  "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for Best Egg.",
+  "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for Best Egg."
+ }
+}

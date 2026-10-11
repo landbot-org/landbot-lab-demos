@@ -15,7 +15,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
       try {
         const btn = f.locator('[data-lb-part="option-button"]', { hasText: a });
         if (await btn.count()) { await btn.last().click({ timeout: 5000 }); done = true; break; }
-        const inp = f.locator('[data-lb-part="input-field"] textarea, [data-lb-part="input-field"] input');
+        const inp = f.locator('[data-lb-part="input-field"] textarea, [data-lb-part="input-field"] input, [data-lb-part="text-input"] input, [data-lb-part="text-input"] textarea');
         if (await inp.count()) { await inp.last().click(); await inp.last().fill(a); await inp.last().press('Enter'); done = true; break; }
       } catch (e) {}
     }
