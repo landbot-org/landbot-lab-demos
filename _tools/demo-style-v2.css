@@ -36,7 +36,7 @@
 }
 
 /* ---------- chrome: no Landbot marks ---------- */
-[data-lb-part="branding"] { display:none; }
+[data-lb-part="branding"] { color:#6b7280; }
 [data-lb-part="header"] { display:none; }
 [data-lb-part="launcher"] { position:relative; background:{{DARK}}; box-shadow:0 10px 28px rgba({{DARK_RGB}},.35); }
 [data-lb-part="launcher-avatar"] { opacity:0; }
