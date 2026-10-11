@@ -57,6 +57,7 @@
         row.appendChild(l); row.appendChild(v); box.appendChild(row);
       });
       bb.appendChild(box); bb.classList.add('lbx-card'); bb.setAttribute('data-lbx-tier', tier);
+      stats.toBottomUntil = Date.now() + 4000;
       head.setAttribute('data-lbx-tier', tier);
     }
 
@@ -94,15 +95,29 @@
           if (bb.classList.contains('lbx-card')) { after = true; done = true; continue; }
           if (after && !bb.classList.contains('lbx-after')) bb.classList.add('lbx-after');
           var t = (bb.textContent || '').trim();
-          if (t.indexOf(CONFIG.cardMarker) === 0) { buildCard(bb, t); after = true; done = true; }
+          if (t.indexOf(CONFIG.cardMarker) === 0) { buildCard(bb, t); after = true; done = true; if (b > 0 && !bubbles[b - 1].classList.contains('lbx-pre')) bubbles[b - 1].classList.add('lbx-pre'); }
         }
         ttl.textContent = done ? CONFIG.fileDone : CONFIG.fileTitle;
         document.body.classList.toggle('lbx-done', done);
+        // place the lead file inside the chat layout, right above the scrolling area, so it never covers a message
+        var firstMsg = document.querySelector('[data-lb-part="message"]');
+        if (firstMsg) {
+          var sc = firstMsg.parentElement;
+          while (sc && sc !== document.body) { var oy = getComputedStyle(sc).overflowY; if (oy === 'auto' || oy === 'scroll') break; sc = sc.parentElement; }
+          if (sc && sc !== document.body && sc.parentElement && head.nextSibling !== sc) {
+            sc.parentElement.insertBefore(head, sc); head.classList.add('lbx-inline');
+          }
+        }
         var active = !!document.querySelector('[data-lb-part="message"], [data-lb-part="options-group"], [data-lb-part="input-field"]');
         if (document.body.classList.contains('lbx-active') !== active) document.body.classList.toggle('lbx-active', active);
         if (CONFIG.placeholder) {
           var ins = document.querySelectorAll('[data-lb-part="input-field"] textarea, [data-lb-part="input-field"] input');
           for (var z = 0; z < ins.length; z++) { if (ins[z].getAttribute('placeholder') !== CONFIG.placeholder) ins[z].setAttribute('placeholder', CONFIG.placeholder); }
+        }
+        if (stats.toBottomUntil && Date.now() < stats.toBottomUntil && firstMsg) {
+          var scr = firstMsg.parentElement;
+          while (scr && scr !== document.body) { var o2 = getComputedStyle(scr).overflowY; if (o2 === 'auto' || o2 === 'scroll') break; scr = scr.parentElement; }
+          if (scr && scr !== document.body) scr.scrollTop = scr.scrollHeight;
         }
         stats.renders++;
       } catch (e) { stats.error = String(e); }

@@ -63,8 +63,7 @@ body.lbx-active #lbx-head { display:block; position:fixed; top:0; left:0; right:
 #lbx-head .lbx-slot:not(.lbx-filled) .lbx-v { display:none; }
 #lbx-head .lbx-slot.lbx-filled { border-style:solid; border-color:rgba(255,255,255,.18); background:rgba(255,255,255,.08); }
 #lbx-head .lbx-slot.lbx-new { background:#2f609f; border-color:#2f609f; }
-body.lbx-active { padding-top:96px; }
-body.lbx-active [data-lb-part="window"] { padding-top:96px; }
+body.lbx-active #lbx-head.lbx-inline { position:relative; top:auto; left:auto; right:auto; flex:none; z-index:2; }
 
 /* ---------- conversation ---------- */
 [data-lb-part="message-text"] { font-family:"Plus Jakarta Sans", system-ui, sans-serif; line-height:1.5; }
@@ -124,3 +123,9 @@ body.lbx-exp [data-lb-part="message"][data-lb-author="bot"] [data-lb-part="messa
 *::-webkit-scrollbar-thumb { background:#c9ced6; border-radius:8px; }
 @media (prefers-reduced-motion: reduce) { * { animation:none !important; transition:none !important; } }
 body.lbx-exp [data-lb-part="message-bubble"].lbx-card { width:100%; max-width:100%; box-sizing:border-box; }
+
+/* end screen fits: no duplicate intro in experience mode, compact full-width card (2026-10-11) */
+body.lbx-focus [data-lb-part="message-bubble"].lbx-pre { display:none; }
+.lbx-rows { width:100%; }
+.lbx-row { padding:7px 0; font-size:14px; }
+.lbx-badge { margin-bottom:6px; }
