@@ -1,0 +1,22 @@
+# Bots v1 a borrar (sustituidos por v2 el 2026-10-11)
+- Demo Best Egg 10-10 · 5cab681b-1f96-4828-91ab-f312663ad9c5 · https://app.landbot.io/gui/bot/4086505/builder
+- Animal Friends · 2dcb24ea-3eef-49a2-8f7e-3dfb0d737e96
+- Chill Insurance · 32ac1aca-53fa-4e70-aba5-14ab187cf83e
+- CompanyCam · 0baee50a-0a9f-446f-9e66-11ad5c92866a
+- Credibly · 39beb6e4-506c-473f-a351-60cce7f865da
+- EAE Business School · b6e9eac2-d55b-441f-a6e5-3dac82fd8127
+- Euroinnova · c268f3e8-fe16-4e0f-ad3d-70e017f38d0e
+- Evlo · 44f9165d-cc84-4b84-943a-7cccf7c7fe15
+- Exoticca · b592fa1b-903a-451f-a296-1ef0b9b6e7bf
+- Fullstack Academy · c8f8a434-372e-48f1-af18-559c6ffbd2be
+- Funding Circle · a74caf64-875f-4d20-96de-3e31fe3de464
+- Griffith College · aacc2635-91b4-4a65-a3c2-76018a4ab1d4
+- Hippo · 9b05cb76-8114-4f31-a006-5ec3aeb3a466
+- iwoca · b2d334de-d802-4ca0-bb99-b00665f64b97
+- Constructora Marval · 44a1a637-473e-4d54-b278-c7595a782cbf
+- Obie Insurance · ffb864c8-0d53-424c-9943-a303d76e98c0
+- Portillo · c09bc8f7-a5c1-4d33-a98b-588a3b54c67a
+- SalesRabbit · 8ea775dd-4d90-457c-816a-a1b60cc8ac2e
+- Signaturit · ef5ee4cc-0e8f-4ae9-8165-ebff43921d9a
+- Utel Universidad · 5ad81862-f83c-4554-ab67-24bfe4dd7abf
+- Agente de IA huérfano de la primera demo de Best Egg (sin bloque que lo use)
