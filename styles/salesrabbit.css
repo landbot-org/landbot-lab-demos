@@ -1,4 +1,4 @@
-/* lb-style: demo-salesrabbit 2026-10-10 */
+/* lb-style: demo-salesrabbit 2026-10-11 */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
 
 :root {
@@ -135,3 +135,9 @@ body.lbx-exp [data-lb-part="option-button"] * { white-space:normal !important; o
 /* Back label in the demo's language (the channel text is not writable from here) */
 button[data-slot="button"][data-size="sm"][data-variant="ghost"] { font-size:0; }
 button[data-slot="button"][data-size="sm"][data-variant="ghost"]::after { content:"Back"; font-size:13px; }
+
+/* options panel: no dead space above, hover not clipped (fix 2026-10-11) */
+body.lbx-exp [data-lb-part="options-group"] > div:has(> [data-lb-part="options-prompt"]) { display:none; }
+body.lbx-exp [data-lb-part="options-group"] { padding:8px 8px 4px; }
+body.lbx-exp [data-lb-part="options-list"] { padding:4px; }
+body.lbx-exp [data-lb-part="option-button"]:hover { transform:none; box-shadow:0 3px 10px rgba(0,0,0,.08); }
