@@ -29,7 +29,7 @@
   </div>
   <script>
     import('https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs').then(function () {
-      var lb = new window.Landbot.Livechat({ configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-3528121-OW4P20JRYP4HKQ47/index.json' });
+      var lb = new window.Landbot.Livechat({ configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-3528842-8HMD1Y9ISL0J8E7G/index.json' });
       var opened = false;
       function openOnce() { if (opened || window.innerWidth <= 700) return; opened = true; lb.open(); }
       lb.onLoad(function () { setTimeout(openOnce, 2500); });

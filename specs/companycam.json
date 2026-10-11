@@ -17,22 +17,25 @@
     "page_bg": "#f7f6f2",
     "font": "Figtree"
   },
-  "greeting": "Hey there! Curious how CompanyCam keeps your job sites documented? Ask me anything, or let's get you set up with a demo.",
+  "greeting": "Hey there. Curious how CompanyCam keeps your job sites documented? Answer four quick questions to set up your demo, or ask me anything first.",
   "cta": "Book a demo",
   "questions": [
     {
       "id": "trade",
       "type": "buttons",
-      "text": "Awesome. What trade are you in?",
+      "text": "What trade are you in?",
       "options": [
         "Roofing or solar",
         "Restoration",
-        "General contractor",
-        "Another trade"
+        "Another trade",
+        "I'm a homeowner"
       ],
       "field": "trade",
       "emoji": "🛠️",
-      "label": "Trade"
+      "label": "Trade",
+      "disqualify": [
+        3
+      ]
     },
     {
       "id": "team",
@@ -41,7 +44,8 @@
       "options": [
         "1 to 10",
         "11 to 49",
-        "50 or more"
+        "50 or more",
+        "Part of a franchise"
       ],
       "field": "team_size",
       "emoji": "👷",
@@ -61,20 +65,49 @@
       "label": "Current tool"
     },
     {
-      "id": "email",
-      "type": "email",
-      "text": "Last one. What's your work email so we can send the demo details?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
+      "id": "timing",
+      "type": "buttons",
+      "text": "When would you want your crews using it?",
+      "options": [
+        "This week",
+        "This month",
+        "Next season",
+        "Just researching"
+      ],
+      "field": "timing",
+      "emoji": "⏱️",
+      "label": "Timing",
+      "hot": [
+        0,
+        1
+      ]
     }
   ],
-  "summary_intro": "Thanks! Here is what CompanyCam's team would receive, instantly:",
+  "summary_intro": "Here is what CompanyCam's team would receive:",
   "summary_marker": "Here is what",
   "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for CompanyCam.",
   "card_badge": "Lead ready · priority high",
   "error_text": "That doesn't look right. Could you check it?",
   "agent_error": "Sorry, I didn't catch that. Want to book a demo instead?",
   "agent_exit": "The visitor wants a demo, pricing, a free trial, or to talk to sales.",
-  "agent_instructions": "You are a demo assistant built by Landbot to show CompanyCam's marketing team what an AI agent on companycam.com could do. You may only talk about what their homepage shows: CompanyCam is a photo and job site management app for contractors. Crews capture photos and videos, add context with their voice, and keep everything organized with unlimited cloud storage. Teams track progress in real time with photos, checklists and reports, collaborate with crews and clients in one place with instant translations and recaps, and use AI to build reports and checklists. It also offers Payments, a Marketing Suite that turns project photos into posts and review requests, and 60+ integrations such as AccuLynx, Jobber, JobNimbus, JobTread, Leap and QuickBooks Online. It serves small, medium, enterprise and franchise businesses across 50+ trades, and over 285,000 pros use it.\n\nHard rules: never quote prices, plans, discounts or trial terms, and never promise features, results or timelines. Never ask for sensitive data such as passwords or payment details. Never invent facts; if you don't know, say the CompanyCam team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to book a demo.\n\nExit as soon as the visitor wants a demo, asks about pricing or a free trial, or wants to talk to sales."
+  "agent_instructions": "You are a demo assistant built by Landbot to show CompanyCam's marketing team what an AI agent on companycam.com could do. You may only talk about what their homepage shows: CompanyCam is a photo and job site management app for contractors. Crews capture photos and videos, add context with their voice, and keep everything organized with unlimited cloud storage. Teams track progress in real time with photos, checklists and reports, collaborate with crews and clients in one place with instant translations and recaps, and use AI to build reports and checklists. It also offers Payments, a Marketing Suite that turns project photos into posts and review requests, and 60+ integrations such as AccuLynx, Jobber, JobNimbus, JobTread, Leap and QuickBooks Online. It serves small, medium, enterprise and franchise businesses across 50+ trades, and over 285,000 pros use it.\n\nHard rules: never quote prices, plans, discounts or trial terms, and never promise features, results or timelines. Never ask for sensitive data such as passwords or payment details. Never invent facts; if you don't know, say the CompanyCam team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to book a demo.\n\nExit as soon as the visitor wants a demo, asks about pricing or a free trial, or wants to talk to sales.",
+  "routing": {
+    "file_title": "Your request",
+    "file_done": "What CompanyCam's team receives",
+    "route_label": "Route",
+    "name_label": "Name",
+    "phone_label": "Phone",
+    "hot_text": "You look like a strong fit and you're ready to roll it out. Someone from the CompanyCam team can call you today to set up a demo around your jobs.",
+    "name_q": "Who should they ask for?",
+    "phone_q": "And the best number to reach you?",
+    "warm_text": "No rush. We can email you a walkthrough and customer stories from your trade to look at in your own time.",
+    "email_q": "What's your work email?",
+    "cold_text": "CompanyCam is built for contractors and their crews, so it isn't set up for homeowners. If you're working with a contractor, ask whether they use CompanyCam to share your project photos.",
+    "hot_label": "Hot lead. Call today",
+    "warm_label": "Nurture. Email sequence",
+    "cold_label": "Not a fit. Homeowner, not a contractor",
+    "hot_closing": "In the real version, this lead lands in your CRM and the right person is alerted right away. Demo prepared by Landbot for CompanyCam.",
+    "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for CompanyCam.",
+    "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for CompanyCam."
+  }
 }

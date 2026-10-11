@@ -1,82 +1,113 @@
 {
-  "key": "utel",
-  "company": "Utel Universidad",
-  "domain": "utel.edu.mx",
-  "url": "https://utel.edu.mx",
-  "lang": "es",
-  "format": "chat",
-  "title": "Utel Universidad · Encuentra tu programa",
-  "palette": {
-    "dark": "#1c2d1a",
-    "dark_hover": "#2e4a2b",
-    "accent": "#008e00",
-    "accent_soft": "#e9f8e9",
-    "accent_line": "#bfe8bf",
-    "accent_bright": "#5fd85f",
-    "bg": "#f7fafc",
-    "page_bg": "#f7fafc",
-    "font": "Inter"
+ "key": "utel",
+ "company": "Utel Universidad",
+ "domain": "utel.edu.mx",
+ "url": "https://utel.edu.mx",
+ "lang": "es",
+ "format": "chat",
+ "title": "Utel Universidad · Encuentra tu programa",
+ "palette": {
+  "dark": "#1c2d1a",
+  "dark_hover": "#2e4a2b",
+  "accent": "#008e00",
+  "accent_soft": "#e9f8e9",
+  "accent_line": "#bfe8bf",
+  "accent_bright": "#5fd85f",
+  "bg": "#f7fafc",
+  "page_bg": "#f7fafc",
+  "font": "Inter"
+ },
+ "greeting": "Hola. ¿Estás pensando en estudiar en Utel? Contesta cuatro preguntas rápidas y te digo qué opción encaja contigo, o pregúntame lo que quieras primero.",
+ "cta": "Encontrar mi programa",
+ "questions": [
+  {
+   "id": "level",
+   "type": "buttons",
+   "text": "¿Qué nivel te interesa estudiar?",
+   "options": [
+    "Bachillerato",
+    "Licenciatura",
+    "Maestría",
+    "Doctorado"
+   ],
+   "field": "study_level",
+   "emoji": "🎓",
+   "label": "Nivel"
   },
-  "greeting": "¡Hola! ¿Estás pensando en estudiar en Utel? Resuelvo tus dudas o te ayudo a encontrar tu programa en un minuto.",
-  "cta": "Encontrar mi programa",
-  "questions": [
-    {
-      "id": "level",
-      "type": "buttons",
-      "text": "¡Perfecto! ¿Qué nivel te interesa estudiar?",
-      "options": [
-        "Bachillerato",
-        "Licenciatura",
-        "Maestría",
-        "Doctorado"
-      ],
-      "field": "study_level",
-      "emoji": "🎓",
-      "label": "Nivel"
-    },
-    {
-      "id": "area",
-      "type": "buttons",
-      "text": "¿Y qué área te llama más?",
-      "options": [
-        "Negocios",
-        "Tecnología",
-        "Ciencias sociales",
-        "Otra área"
-      ],
-      "field": "study_area",
-      "emoji": "📚",
-      "label": "Área"
-    },
-    {
-      "id": "start",
-      "type": "buttons",
-      "text": "¿Cuándo te gustaría empezar?",
-      "options": [
-        "Lo antes posible",
-        "En 1 a 3 meses",
-        "Más adelante",
-        "Solo estoy viendo"
-      ],
-      "field": "start_timing",
-      "emoji": "🗓️",
-      "label": "Inicio"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿A qué email te enviamos la información?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de admisiones de Utel al instante:",
-  "summary_marker": "Esto es lo que",
-  "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en tu CRM. Demo preparada por Landbot para Utel Universidad.",
-  "card_badge": "Lead listo · prioridad alta",
-  "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
-  "agent_error": "Perdona, no te entendí. ¿Quieres que te ayude a encontrar tu programa?",
-  "agent_exit": "El visitante quiere encontrar su programa, inscribirse, pedir información o hablar con un asesor.",
-  "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing y admisiones de Utel Universidad lo que un agente de IA podría hacer en utel.edu.mx. Hablas en español neutro de México y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: Utel es una universidad en línea con bachillerato, licenciaturas, maestrías, másteres, doctorados, especialidades, diplomados y cursos de inglés; modalidades en línea, ejecutiva e híbrida; programas con validez oficial SEP (RVOE); acompañamiento, flexibilidad y comunidad internacional; existen becas, test vocacional gratuito y revalidación de estudios; para empezar se pide información y un asesor da seguimiento.\n\nReglas estrictas: nunca des precios, cuotas, importes o porcentajes de becas, descuentos, fechas de inicio ni garantías de admisión; si te lo piden, di que el equipo de admisiones de Utel se lo confirma. Nunca pidas datos sensibles (DNI o documento de identidad, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece encontrar tu programa. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo encontrar tu programa.\n\nSal en cuanto el visitante quiera encontrar su programa, inscribirse, pedir información, conocer becas para su caso o hablar con un asesor."
+  {
+   "id": "modality",
+   "type": "buttons",
+   "text": "¿Cómo te gustaría estudiar?",
+   "options": [
+    "100% en línea",
+    "Híbrida con sesiones",
+    "Todo presencial"
+   ],
+   "field": "modality",
+   "emoji": "💻",
+   "label": "Modalidad",
+   "disqualify": [
+    2
+   ]
+  },
+  {
+   "id": "area",
+   "type": "buttons",
+   "text": "¿Y qué área te llama más?",
+   "options": [
+    "Negocios",
+    "Tecnología",
+    "Ciencias sociales",
+    "Otra área"
+   ],
+   "field": "study_area",
+   "emoji": "📚",
+   "label": "Área"
+  },
+  {
+   "id": "start",
+   "type": "buttons",
+   "text": "¿Cuándo te gustaría empezar?",
+   "options": [
+    "Lo antes posible",
+    "En 1 a 3 meses",
+    "Más adelante",
+    "Solo estoy viendo"
+   ],
+   "field": "start_timing",
+   "emoji": "🗓️",
+   "label": "Inicio",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Esto es lo que recibiría el equipo de Utel:",
+ "summary_marker": "Esto es lo que",
+ "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en tu CRM. Demo preparada por Landbot para Utel Universidad.",
+ "card_badge": "Lead listo · prioridad alta",
+ "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
+ "agent_error": "Perdona, no te entendí. ¿Quieres que te ayude a encontrar tu programa?",
+ "agent_exit": "El visitante quiere encontrar su programa, inscribirse, pedir información o hablar con un asesor.",
+ "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing y admisiones de Utel Universidad lo que un agente de IA podría hacer en utel.edu.mx. Hablas en español neutro de México y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: Utel es una universidad en línea con bachillerato, licenciaturas, maestrías, másteres, doctorados, especialidades, diplomados y cursos de inglés; modalidades en línea, ejecutiva e híbrida; programas con validez oficial SEP (RVOE); acompañamiento, flexibilidad y comunidad internacional; existen becas, test vocacional gratuito y revalidación de estudios; para empezar se pide información y un asesor da seguimiento.\n\nReglas estrictas: nunca des precios, cuotas, importes o porcentajes de becas, descuentos, fechas de inicio ni garantías de admisión; si te lo piden, di que el equipo de admisiones de Utel se lo confirma. Nunca pidas datos sensibles (DNI o documento de identidad, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece encontrar tu programa. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo encontrar tu programa.\n\nSal en cuanto el visitante quiera encontrar su programa, inscribirse, pedir información, conocer becas para su caso o hablar con un asesor.",
+ "routing": {
+  "file_title": "Tu solicitud",
+  "file_done": "Lo que recibe el equipo de Utel",
+  "route_label": "Ruta",
+  "name_label": "Nombre",
+  "phone_label": "Teléfono",
+  "hot_text": "Encajas muy bien y quieres empezar pronto. Un asesor de admisiones de Utel puede llamarte hoy para revisar contigo el programa y los siguientes pasos.",
+  "name_q": "¿Por quién pregunto cuando te llamen?",
+  "phone_q": "¿Y en qué teléfono te localizan mejor?",
+  "warm_text": "Sin prisa. Te enviamos por email la información del programa para que la revises con calma.",
+  "email_q": "¿A qué email te lo enviamos?",
+  "cold_text": "Utel es una universidad en línea: sus programas son en línea, ejecutivos o híbridos con sesiones presenciales puntuales, así que una carrera totalmente presencial no es algo que ofrezca. Si te interesa estudiar en línea, aquí estamos.",
+  "hot_label": "Lead caliente. Llamar hoy",
+  "warm_label": "Nurturing. Secuencia de emails",
+  "cold_label": "No encaja. Busca solo presencial",
+  "hot_closing": "En la versión real, este lead entra en tu CRM y un asesor recibe el aviso al momento. Demo preparada por Landbot para Utel Universidad.",
+  "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para Utel Universidad.",
+  "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste ninguna llamada en él. Demo preparada por Landbot para Utel Universidad."
+ }
 }

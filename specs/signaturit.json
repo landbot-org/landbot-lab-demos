@@ -17,13 +17,30 @@
     "page_bg": "#f5f5ff",
     "font": "Outfit"
   },
-  "greeting": "¡Hola! ¿Quieres firmar, verificar o certificar documentos en digital? Pregúntame lo que quieras o te organizo una demo.",
+  "greeting": "Hola. ¿Quieres firmar, verificar o certificar documentos en digital? Responde cuatro preguntas rápidas y te organizamos una demo, o pregúntame lo que quieras primero.",
   "cta": "Solicitar una demo",
   "questions": [
     {
+      "id": "profile",
+      "type": "buttons",
+      "text": "¿Para quién es?",
+      "options": [
+        "Soy autónomo",
+        "Pyme",
+        "Gran empresa",
+        "Uso personal"
+      ],
+      "field": "profile",
+      "emoji": "🏢",
+      "label": "Perfil",
+      "disqualify": [
+        3
+      ]
+    },
+    {
       "id": "usecase",
       "type": "buttons",
-      "text": "¡Genial! ¿Qué necesitas resolver?",
+      "text": "¿Qué necesitas resolver?",
       "options": [
         "Firma electrónica",
         "Verificar identidad",
@@ -49,34 +66,49 @@
       "label": "Volumen"
     },
     {
-      "id": "size",
+      "id": "timing",
       "type": "buttons",
-      "text": "¿Cuántas personas trabajan en tu empresa?",
+      "text": "¿Para cuándo lo necesitas?",
       "options": [
-        "1 a 49",
-        "50 a 249",
-        "250 a 999",
-        "1.000 o más"
+        "Este mes",
+        "Este trimestre",
+        "Más adelante",
+        "Solo me informo"
       ],
-      "field": "company_size",
-      "emoji": "🏢",
-      "label": "Empresa"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿Cuál es tu email de trabajo para enviarte los detalles?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
+      "field": "timing",
+      "emoji": "⏱️",
+      "label": "Plazo",
+      "hot": [
+        0,
+        1
+      ]
     }
   ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de Signaturit al instante:",
+  "summary_intro": "Esto es lo que recibiría el equipo de Signaturit:",
   "summary_marker": "Esto es lo que",
   "closing": "Esa es la idea: cada visitante atendido y cualificado en menos de un minuto, con sus datos ya en tu CRM. Demo preparada por Landbot para Signaturit.",
   "card_badge": "Lead listo · prioridad alta",
   "error_text": "Eso no parece correcto. ¿Lo revisas?",
   "agent_error": "Perdona, no te he entendido. ¿Quieres solicitar una demo?",
   "agent_exit": "El visitante quiere una demo, precios, probar la plataforma o hablar con ventas.",
-  "agent_instructions": "Eres un asistente de demostración creado por Landbot para enseñar al equipo de marketing de Signaturit lo que un agente de IA podría hacer en signaturit.com. Solo puedes hablar de lo que muestra su página de inicio: Signaturit Group, ahora parte de Namirial, es una plataforma europea todo en uno para firmar, verificar, archivar y acelerar transacciones digitales. Ofrece firma electrónica, verificación de identidad y KYC, identificación remota por vídeo, emisión y gestión de certificados cualificados eIDAS, email y SMS certificados, notificaciones electrónicas, verificación de documentos y preservación digital. Cumple eIDAS y RGPD, tiene más de 20 años de experiencia, integraciones como API, Zapier, Google Docs y SAP, y soluciones por sector (inmobiliaria, seguros, servicios financieros, logística con eCMR, entre otros) y por caso de uso (legal, RRHH, compras, ventas).\n\nReglas estrictas: nunca des precios, planes, descuentos ni condiciones de la prueba gratis, y nunca prometas plazos, resultados ni validez legal en un caso concreto. Nunca pidas datos sensibles como DNI, NIE, documentos o datos bancarios. Nunca inventes; si no lo sabes, di que el equipo de Signaturit puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo solicitar una demo.\n\nSal en cuanto el visitante quiera una demo, pregunte por precios, quiera probar la plataforma o hablar con ventas."
+  "agent_instructions": "Eres un asistente de demostración creado por Landbot para enseñar al equipo de marketing de Signaturit lo que un agente de IA podría hacer en signaturit.com. Solo puedes hablar de lo que muestra su página de inicio: Signaturit Group, ahora parte de Namirial, es una plataforma europea todo en uno para firmar, verificar, archivar y acelerar transacciones digitales. Ofrece firma electrónica, verificación de identidad y KYC, identificación remota por vídeo, emisión y gestión de certificados cualificados eIDAS, email y SMS certificados, notificaciones electrónicas, verificación de documentos y preservación digital. Cumple eIDAS y RGPD, tiene más de 20 años de experiencia, integraciones como API, Zapier, Google Docs y SAP, y soluciones por sector (inmobiliaria, seguros, servicios financieros, logística con eCMR, entre otros) y por caso de uso (legal, RRHH, compras, ventas).\n\nReglas estrictas: nunca des precios, planes, descuentos ni condiciones de la prueba gratis, y nunca prometas plazos, resultados ni validez legal en un caso concreto. Nunca pidas datos sensibles como DNI, NIE, documentos o datos bancarios. Nunca inventes; si no lo sabes, di que el equipo de Signaturit puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo solicitar una demo.\n\nSal en cuanto el visitante quiera una demo, pregunte por precios, quiera probar la plataforma o hablar con ventas.",
+  "routing": {
+    "file_title": "Tu solicitud",
+    "file_done": "Lo que recibe el equipo de Signaturit",
+    "route_label": "Ruta",
+    "name_label": "Nombre",
+    "phone_label": "Teléfono",
+    "hot_text": "Encajas muy bien y lo necesitas pronto. Alguien del equipo de Signaturit puede llamarte hoy para preparar una demo con tu caso.",
+    "name_q": "¿Por quién preguntamos?",
+    "phone_q": "¿Y a qué teléfono te llamamos?",
+    "warm_text": "Sin prisa. Te enviamos por email cómo funciona y casos de tu sector para que lo veas con calma.",
+    "email_q": "¿A qué email de trabajo te lo enviamos?",
+    "cold_text": "Signaturit da servicio a profesionales y empresas, y sus planes no están disponibles para consumidores. Para firmar algo puntual a título personal, te conviene una herramienta de uso personal.",
+    "hot_label": "Lead caliente. Llamar hoy",
+    "warm_label": "Nurturing. Secuencia de emails",
+    "cold_label": "No encaja. Uso personal",
+    "hot_closing": "En la versión real, este lead entra en tu CRM y se avisa al momento a la persona adecuada. Demo preparada por Landbot para Signaturit.",
+    "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para Signaturit.",
+    "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste una llamada en él. Demo preparada por Landbot para Signaturit."
+  }
 }

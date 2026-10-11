@@ -1,81 +1,114 @@
 {
-  "key": "eae",
-  "company": "EAE Business School",
-  "domain": "eae.es",
-  "url": "https://www.eae.es",
-  "lang": "es",
-  "format": "chat",
-  "title": "EAE Business School · Encuentra tu programa",
-  "palette": {
-    "dark": "#0a2239",
-    "dark_hover": "#163552",
-    "accent": "#ee2737",
-    "accent_soft": "#fdecee",
-    "accent_line": "#fac4c8",
-    "accent_bright": "#ff6b76",
-    "bg": "#faf8f4",
-    "page_bg": "#faf8f4",
-    "font": "Inter Tight"
+ "key": "eae",
+ "company": "EAE Business School",
+ "domain": "eae.es",
+ "url": "https://www.eae.es",
+ "lang": "es",
+ "format": "chat",
+ "title": "EAE Business School · Encuentra tu programa",
+ "palette": {
+  "dark": "#0a2239",
+  "dark_hover": "#163552",
+  "accent": "#ee2737",
+  "accent_soft": "#fdecee",
+  "accent_line": "#fac4c8",
+  "accent_bright": "#ff6b76",
+  "bg": "#faf8f4",
+  "page_bg": "#faf8f4",
+  "font": "Inter Tight"
+ },
+ "greeting": "Hola. ¿Te planteas un máster o un MBA en EAE? Contesta cuatro preguntas rápidas y te digo qué programa encaja contigo, o pregúntame lo que quieras primero.",
+ "cta": "Encontrar mi programa",
+ "questions": [
+  {
+   "id": "programme",
+   "type": "buttons",
+   "text": "¿Qué tipo de programa buscas?",
+   "options": [
+    "Grado",
+    "Máster",
+    "MBA",
+    "Executive MBA"
+   ],
+   "field": "programme_type",
+   "emoji": "🎓",
+   "label": "Programa"
   },
-  "greeting": "¡Hola! ¿Te planteas un máster o un MBA en EAE? Te resuelvo dudas o te ayudo a encontrar tu programa en un minuto.",
-  "cta": "Encontrar mi programa",
-  "questions": [
-    {
-      "id": "programme",
-      "type": "buttons",
-      "text": "¡Genial! ¿Qué tipo de programa buscas?",
-      "options": [
-        "Máster",
-        "MBA",
-        "Executive",
-        "Aún no lo sé"
-      ],
-      "field": "programme_type",
-      "emoji": "🎓",
-      "label": "Programa"
-    },
-    {
-      "id": "modality",
-      "type": "buttons",
-      "text": "¿Y en qué modalidad te gustaría cursarlo?",
-      "options": [
-        "Presencial Madrid",
-        "Presencial Barcelona",
-        "Online"
-      ],
-      "field": "modality",
-      "emoji": "📍",
-      "label": "Modalidad"
-    },
-    {
-      "id": "experience",
-      "type": "buttons",
-      "text": "¿Cuántos años de experiencia profesional tienes?",
-      "options": [
-        "Ninguna todavía",
-        "Menos de 3 años",
-        "De 3 a 10 años",
-        "Más de 10 años"
-      ],
-      "field": "years_experience",
-      "emoji": "💼",
-      "label": "Experiencia"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿A qué email te enviamos la información del programa?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de admisiones de EAE al instante:",
-  "summary_marker": "Esto es lo que",
-  "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en vuestro CRM. Demo preparada por Landbot para EAE Business School.",
-  "card_badge": "Lead listo · prioridad alta",
-  "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
-  "agent_error": "Perdona, no te he entendido. ¿Quieres que te ayude a encontrar tu programa?",
-  "agent_exit": "El visitante quiere encontrar su programa, solicitar información, inscribirse o hablar con un asesor académico.",
-  "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing y admisiones de EAE Business School lo que un agente de IA podría hacer en eae.es. Hablas en español de España y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: EAE ofrece MBAs (MBA en Español, Executive MBA, International MBA, Global Executive MBA y otros), másteres en marketing, finanzas, recursos humanos, supply chain, project management, tecnología y datos, y turismo, másteres universitarios y grados (ADE, Marketing y Comunicación Digital); formatos full time, part time e hybrid; campus en Madrid y Barcelona; hay becas y la convocatoria 2026 está abierta; para empezar se solicita información y un asesor académico contacta.\n\nReglas estrictas: nunca des precios, cuotas, importes o porcentajes de becas, descuentos, fechas de inicio ni garantías de admisión; si te lo piden, di que el equipo de admisiones de EAE se lo confirma. Nunca pidas datos sensibles (DNI o documento de identidad, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece encontrar tu programa. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo encontrar tu programa.\n\nSal en cuanto el visitante quiera encontrar su programa, solicitar información, inscribirse, conocer becas para su caso o hablar con un asesor académico."
+  {
+   "id": "campus",
+   "type": "buttons",
+   "text": "¿Dónde te gustaría estudiar?",
+   "options": [
+    "Campus Madrid",
+    "Campus Barcelona",
+    "Me da igual",
+    "En otra ciudad"
+   ],
+   "field": "campus",
+   "emoji": "📍",
+   "label": "Campus",
+   "disqualify": [
+    3
+   ]
+  },
+  {
+   "id": "experience",
+   "type": "buttons",
+   "text": "¿Cuántos años de experiencia profesional tienes?",
+   "options": [
+    "Ninguna todavía",
+    "Menos de 3 años",
+    "De 3 a 10 años",
+    "Más de 10 años"
+   ],
+   "field": "years_experience",
+   "emoji": "💼",
+   "label": "Experiencia"
+  },
+  {
+   "id": "start",
+   "type": "buttons",
+   "text": "¿Cuándo te gustaría empezar?",
+   "options": [
+    "Próxima edición",
+    "En un año",
+    "Más adelante",
+    "Solo me informo"
+   ],
+   "field": "start_timing",
+   "emoji": "🗓️",
+   "label": "Inicio",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Esto es lo que recibiría el equipo de EAE:",
+ "summary_marker": "Esto es lo que",
+ "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en vuestro CRM. Demo preparada por Landbot para EAE Business School.",
+ "card_badge": "Lead listo · prioridad alta",
+ "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
+ "agent_error": "Perdona, no te he entendido. ¿Quieres que te ayude a encontrar tu programa?",
+ "agent_exit": "El visitante quiere encontrar su programa, solicitar información, inscribirse o hablar con un asesor académico.",
+ "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing y admisiones de EAE Business School lo que un agente de IA podría hacer en eae.es. Hablas en español de España y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: EAE ofrece MBAs (MBA en Español, Executive MBA, International MBA, Global Executive MBA y otros), másteres en marketing, finanzas, recursos humanos, supply chain, project management, tecnología y datos, y turismo, másteres universitarios y grados (ADE, Marketing y Comunicación Digital); formatos full time, part time e hybrid; campus en Madrid y Barcelona; hay becas y la convocatoria 2026 está abierta; para empezar se solicita información y un asesor académico contacta.\n\nReglas estrictas: nunca des precios, cuotas, importes o porcentajes de becas, descuentos, fechas de inicio ni garantías de admisión; si te lo piden, di que el equipo de admisiones de EAE se lo confirma. Nunca pidas datos sensibles (DNI o documento de identidad, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece encontrar tu programa. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo encontrar tu programa.\n\nSal en cuanto el visitante quiera encontrar su programa, solicitar información, inscribirse, conocer becas para su caso o hablar con un asesor académico.",
+ "routing": {
+  "file_title": "Tu solicitud",
+  "file_done": "Lo que recibe el equipo de EAE",
+  "route_label": "Ruta",
+  "name_label": "Nombre",
+  "phone_label": "Teléfono",
+  "hot_text": "Encajas muy bien con el programa y quieres empezar pronto. Un asesor de admisiones de EAE puede llamarte hoy para contarte fechas, formatos y el proceso de admisión.",
+  "name_q": "¿Por quién pregunto cuando te llamen?",
+  "phone_q": "¿Y en qué teléfono te localizan mejor?",
+  "warm_text": "Sin prisa. Te enviamos por email la información del programa para que la compares con calma.",
+  "email_q": "¿A qué email te lo enviamos?",
+  "cold_text": "EAE tiene campus en Madrid y Barcelona, así que no puede ofrecerte clases en otra ciudad. Si en algún momento puedes estudiar en una de las dos, en eae.es verás los formatos full time, part time e hybrid.",
+  "hot_label": "Lead caliente. Llamar hoy",
+  "warm_label": "Nurturing. Secuencia de emails",
+  "cold_label": "No encaja. Campus fuera de Madrid y Barcelona",
+  "hot_closing": "En la versión real, este lead entra en tu CRM y un asesor recibe el aviso al momento. Demo preparada por Landbot para EAE Business School.",
+  "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para EAE Business School.",
+  "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste ninguna llamada en él. Demo preparada por Landbot para EAE Business School."
+ }
 }

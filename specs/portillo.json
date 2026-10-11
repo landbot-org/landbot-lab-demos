@@ -17,21 +17,24 @@
     "page_bg": "#fafafa",
     "font": "Sora"
   },
-  "greeting": "¡Hola! ¿Buscas auto nuevo o seminuevo? Te respondo tus dudas o te muestro tus opciones en un minuto.",
+  "greeting": "Hola. ¿Buscas auto nuevo o seminuevo? Responde cuatro preguntas rápidas y te mostramos tus opciones, o pregúntame lo que quieras primero.",
   "cta": "Ver mis opciones",
   "questions": [
     {
       "id": "type",
       "type": "buttons",
-      "text": "¡Buena! ¿Qué tipo de auto estás buscando?",
+      "text": "¿Qué estás buscando?",
       "options": [
         "Auto nuevo",
         "Seminuevo",
-        "Aún no lo sé"
+        "Una moto"
       ],
       "field": "car_type",
       "emoji": "🚗",
-      "label": "Auto"
+      "label": "Vehículo",
+      "disqualify": [
+        2
+      ]
     },
     {
       "id": "payment",
@@ -60,20 +63,49 @@
       "label": "Parte de pago"
     },
     {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿A qué email te enviamos tus opciones?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
+      "id": "timing",
+      "type": "buttons",
+      "text": "¿Para cuándo lo necesitas?",
+      "options": [
+        "Esta semana",
+        "Este mes",
+        "En unos meses",
+        "Solo estoy mirando"
+      ],
+      "field": "timing",
+      "emoji": "⏱️",
+      "label": "Plazo",
+      "hot": [
+        0,
+        1
+      ]
     }
   ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de Portillo al instante:",
+  "summary_intro": "Esto es lo que recibiría el equipo de Portillo:",
   "summary_marker": "Esto es lo que",
   "closing": "Esa es la idea: cada visitante atendido y calificado en menos de un minuto, con sus datos ya en tu CRM. Demo preparada por Landbot para Portillo.",
   "card_badge": "Lead listo · prioridad alta",
   "error_text": "Eso no parece correcto. ¿Lo revisas?",
   "agent_error": "Perdona, no te entendí. ¿Quieres ver tus opciones?",
   "agent_exit": "El visitante quiere cotizar, ver opciones o precios, financiar, tasar su auto o reservar uno.",
-  "agent_instructions": "Eres un asistente de demostración creado por Landbot para mostrarle al equipo de marketing de Portillo lo que un agente de IA podría hacer en portillo.cl. Solo puedes hablar de lo que muestra su página de inicio: Portillo vende autos nuevos y usados, con marcas como Toyota, Peugeot, Hyundai, Citroën, MG y Nissan. Los seminuevos se ven a través de Clicar, con un stock amplio de autos inspeccionados, y se pueden comparar marcas, años y kilometraje y agendar una prueba de manejo. Hay tasación online gratis en unos 2 minutos, opciones de financiamiento, accesorios y repuestos, flotas, y servicio técnico y mantención que se agendan 100% online. Ventas atiende de lunes a viernes de 09:00 a 19:00 y los sábados de 10:00 a 14:00.\n\nReglas estrictas: nunca des precios, cuotas, pies, tasas, bonos, descuentos, stock ni plazos de entrega, aunque aparezcan en la web. Nunca prometas nada, ni aprobación de crédito ni valor de tasación. Nunca pidas datos sensibles como RUT, patente o datos bancarios. Nunca inventes; si no lo sabes, di que un ejecutivo de Portillo puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo ver sus opciones.\n\nSal en cuanto el visitante quiera cotizar, ver opciones o precios, financiar, tasar su auto o reservar uno."
+  "agent_instructions": "Eres un asistente de demostración creado por Landbot para mostrarle al equipo de marketing de Portillo lo que un agente de IA podría hacer en portillo.cl. Solo puedes hablar de lo que muestra su página de inicio: Portillo vende autos nuevos y usados, con marcas como Toyota, Peugeot, Hyundai, Citroën, MG y Nissan. Los seminuevos se ven a través de Clicar, con un stock amplio de autos inspeccionados, y se pueden comparar marcas, años y kilometraje y agendar una prueba de manejo. Hay tasación online gratis en unos 2 minutos, opciones de financiamiento, accesorios y repuestos, flotas, y servicio técnico y mantención que se agendan 100% online. Ventas atiende de lunes a viernes de 09:00 a 19:00 y los sábados de 10:00 a 14:00.\n\nReglas estrictas: nunca des precios, cuotas, pies, tasas, bonos, descuentos, stock ni plazos de entrega, aunque aparezcan en la web. Nunca prometas nada, ni aprobación de crédito ni valor de tasación. Nunca pidas datos sensibles como RUT, patente o datos bancarios. Nunca inventes; si no lo sabes, di que un ejecutivo de Portillo puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo ver sus opciones.\n\nSal en cuanto el visitante quiera cotizar, ver opciones o precios, financiar, tasar su auto o reservar uno.",
+  "routing": {
+    "file_title": "Tu solicitud",
+    "file_done": "Lo que recibe el equipo de Portillo",
+    "route_label": "Ruta",
+    "name_label": "Nombre",
+    "phone_label": "Teléfono",
+    "hot_text": "Encajas muy bien y tienes prisa, así que vale la pena hablar ya. Un ejecutivo de Portillo puede llamarte hoy para ver modelos, financiamiento y tasación contigo.",
+    "name_q": "¿Por quién preguntamos?",
+    "phone_q": "¿Y a qué teléfono te llamamos?",
+    "warm_text": "Sin apuro. Te mandamos tus opciones por email para que compares con calma.",
+    "email_q": "¿A qué email te lo enviamos?",
+    "cold_text": "Portillo vende autos nuevos y seminuevos, así que motos no tenemos. Si más adelante buscas auto, aquí estamos para ayudarte.",
+    "hot_label": "Lead caliente. Llamar hoy",
+    "warm_label": "Nurturing. Secuencia de emails",
+    "cold_label": "No encaja. Busca moto",
+    "hot_closing": "En la versión real, este lead entra en tu CRM y se avisa al momento a la persona adecuada. Demo preparada por Landbot para Portillo.",
+    "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para Portillo.",
+    "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste una llamada en él. Demo preparada por Landbot para Portillo."
+  }
 }

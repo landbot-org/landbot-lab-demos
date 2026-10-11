@@ -17,13 +17,30 @@
     "page_bg": "#f7f7f7",
     "font": "Work Sans"
   },
-  "greeting": "¡Hola! ¿Buscas vivienda nueva? Te ayudo con tus dudas o te muestro los proyectos Marval que encajan contigo en un minuto.",
+  "greeting": "Hola. ¿Buscas vivienda nueva? Responde cuatro preguntas rápidas y te mostramos los proyectos Marval que encajan contigo, o pregúntame lo que quieras primero.",
   "cta": "Ver mis opciones",
   "questions": [
     {
+      "id": "city",
+      "type": "buttons",
+      "text": "¿En qué ciudad buscas vivienda?",
+      "options": [
+        "Bogotá",
+        "Santander",
+        "Cali o el Caribe",
+        "Medellín"
+      ],
+      "field": "city",
+      "emoji": "📍",
+      "label": "Ciudad",
+      "disqualify": [
+        3
+      ]
+    },
+    {
       "id": "budget",
       "type": "buttons",
-      "text": "¡Genial! ¿Cuál es tu presupuesto para la vivienda?",
+      "text": "¿Cuál es tu presupuesto para la vivienda?",
       "options": [
         "Hasta $300 millones",
         "$300 a $500 millones",
@@ -33,20 +50,6 @@
       "field": "budget",
       "emoji": "💰",
       "label": "Presupuesto"
-    },
-    {
-      "id": "timing",
-      "type": "buttons",
-      "text": "¿Para cuándo te quieres mudar?",
-      "options": [
-        "Lo antes posible",
-        "En 6 a 12 meses",
-        "En 1 a 2 años",
-        "Más adelante"
-      ],
-      "field": "move_timing",
-      "emoji": "📅",
-      "label": "Mudanza"
     },
     {
       "id": "payment",
@@ -63,20 +66,49 @@
       "label": "Pago"
     },
     {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿A qué email te enviamos tus opciones?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
+      "id": "timing",
+      "type": "buttons",
+      "text": "¿Para cuándo te quieres mudar?",
+      "options": [
+        "Lo antes posible",
+        "En 6 a 12 meses",
+        "En 1 a 2 años",
+        "Más adelante"
+      ],
+      "field": "move_timing",
+      "emoji": "📅",
+      "label": "Mudanza",
+      "hot": [
+        0,
+        1
+      ]
     }
   ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de Marval al instante:",
+  "summary_intro": "Esto es lo que recibiría el equipo de Constructora Marval:",
   "summary_marker": "Esto es lo que",
   "closing": "Esa es la idea: cada visitante atendido y calificado en menos de un minuto, con sus datos ya en tu CRM. Demo preparada por Landbot para Constructora Marval.",
   "card_badge": "Lead listo · prioridad alta",
   "error_text": "Eso no parece correcto. ¿Lo revisas?",
   "agent_error": "Perdona, no te entendí. ¿Quieres ver tus opciones?",
   "agent_exit": "El visitante quiere ver proyectos o precios, cotizar, hablar con un asesor o saber qué vivienda encaja con su presupuesto.",
-  "agent_instructions": "Eres un asistente de demostración creado por Landbot para mostrarle al equipo de marketing de Constructora Marval lo que un agente de IA podría hacer en marval.com.co. Solo puedes hablar de lo que muestra su página de inicio: Marval construye vivienda nueva en Colombia, con proyectos en varias ciudades, lanzamientos sobre planos y megaproyectos. Tiene un canal de ventas digitales para comprar vivienda 100% en línea, siempre acompañado de un asesor, además de salas de ventas y una feria digital. Al pago del inmueble se pueden abonar cesantías y subsidios de vivienda familiar, y los pagos se pueden hacer en línea. Sus proyectos cuentan con certificaciones LEED, EDGE y Casa Colombia, y existe el programa Amigos Marval para referidos. La oficina principal está en Bucaramanga.\n\nReglas estrictas: nunca des precios, cuotas, tasas, valores de subsidio, condiciones de crédito, disponibilidad ni fechas de entrega, aunque aparezcan en la web. Nunca prometas nada, ni aprobación de crédito ni de subsidio. Nunca pidas datos sensibles como cédula, ingresos exactos o datos bancarios. Nunca inventes; si no lo sabes, di que un asesor de Marval puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo ver sus opciones.\n\nSal en cuanto el visitante quiera ver proyectos o precios, cotizar, hablar con un asesor o saber qué vivienda encaja con su presupuesto."
+  "agent_instructions": "Eres un asistente de demostración creado por Landbot para mostrarle al equipo de marketing de Constructora Marval lo que un agente de IA podría hacer en marval.com.co. Solo puedes hablar de lo que muestra su página de inicio: Marval construye vivienda nueva en Colombia, con proyectos en varias ciudades, lanzamientos sobre planos y megaproyectos. Tiene un canal de ventas digitales para comprar vivienda 100% en línea, siempre acompañado de un asesor, además de salas de ventas y una feria digital. Al pago del inmueble se pueden abonar cesantías y subsidios de vivienda familiar, y los pagos se pueden hacer en línea. Sus proyectos cuentan con certificaciones LEED, EDGE y Casa Colombia, y existe el programa Amigos Marval para referidos. La oficina principal está en Bucaramanga.\n\nReglas estrictas: nunca des precios, cuotas, tasas, valores de subsidio, condiciones de crédito, disponibilidad ni fechas de entrega, aunque aparezcan en la web. Nunca prometas nada, ni aprobación de crédito ni de subsidio. Nunca pidas datos sensibles como cédula, ingresos exactos o datos bancarios. Nunca inventes; si no lo sabes, di que un asesor de Marval puede ayudar. Si te preguntan, di que esto es una demo creada por Landbot. Responde en 2 o 3 frases cortas, en texto plano, sin markdown ni listas, y tuteando. Termina la mayoría de respuestas ofreciendo ver sus opciones.\n\nSal en cuanto el visitante quiera ver proyectos o precios, cotizar, hablar con un asesor o saber qué vivienda encaja con su presupuesto.",
+  "routing": {
+    "file_title": "Tu solicitud",
+    "file_done": "Lo que recibe el equipo de Constructora Marval",
+    "route_label": "Ruta",
+    "name_label": "Nombre",
+    "phone_label": "Teléfono",
+    "hot_text": "Encajas muy bien con los proyectos de tu ciudad y quieres mudarte pronto. Un asesor de Marval puede llamarte hoy para mostrarte los proyectos que encajan con tu presupuesto.",
+    "name_q": "¿Por quién preguntamos?",
+    "phone_q": "¿Y a qué teléfono te llamamos?",
+    "warm_text": "Sin afán. Te enviamos por email los proyectos que encajan contigo para que los revises con calma.",
+    "email_q": "¿A qué email te lo enviamos?",
+    "cold_text": "Marval no tiene salas de ventas en Medellín por ahora; construye en ciudades como Bogotá, Bucaramanga, Cali, Cartagena, Santa Marta y Barranquilla. Si alguna te sirve, con gusto te mostramos opciones.",
+    "hot_label": "Lead caliente. Llamar hoy",
+    "warm_label": "Nurturing. Secuencia de emails",
+    "cold_label": "No encaja. Ciudad sin proyectos",
+    "hot_closing": "En la versión real, este lead entra en tu CRM y se avisa al momento a la persona adecuada. Demo preparada por Landbot para Constructora Marval.",
+    "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para Constructora Marval.",
+    "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste una llamada en él. Demo preparada por Landbot para Constructora Marval."
+  }
 }

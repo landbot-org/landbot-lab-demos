@@ -1,80 +1,112 @@
 {
-  "key": "euroinnova",
-  "company": "Euroinnova",
-  "domain": "euroinnova.com",
-  "url": "https://www.euroinnova.com",
-  "lang": "es",
-  "format": "chat",
-  "title": "Euroinnova · Encuentra tu curso",
-  "palette": {
-    "dark": "#202020",
-    "dark_hover": "#3a3a3a",
-    "accent": "#e32652",
-    "accent_soft": "#fcedee",
-    "accent_line": "#f6bccb",
-    "accent_bright": "#ff6b8d",
-    "bg": "#f8f8f8",
-    "page_bg": "#f8f8f8",
-    "font": "Ubuntu"
+ "key": "euroinnova",
+ "company": "Euroinnova",
+ "domain": "euroinnova.com",
+ "url": "https://www.euroinnova.com",
+ "lang": "es",
+ "format": "chat",
+ "title": "Euroinnova · Encuentra tu curso",
+ "palette": {
+  "dark": "#202020",
+  "dark_hover": "#3a3a3a",
+  "accent": "#e32652",
+  "accent_soft": "#fcedee",
+  "accent_line": "#f6bccb",
+  "accent_bright": "#ff6b8d",
+  "bg": "#f8f8f8",
+  "page_bg": "#f8f8f8",
+  "font": "Ubuntu"
+ },
+ "greeting": "Hola. ¿Buscas formación online? Contesta cuatro preguntas rápidas y te digo qué curso encaja contigo, o pregúntame lo que quieras primero.",
+ "cta": "Encontrar mi curso",
+ "questions": [
+  {
+   "id": "area",
+   "type": "buttons",
+   "text": "¿Qué área te interesa?",
+   "options": [
+    "Salud",
+    "Empresa y marketing",
+    "Tecnología",
+    "Educación"
+   ],
+   "field": "study_area",
+   "emoji": "📚",
+   "label": "Área"
   },
-  "greeting": "¡Hola! ¿Buscas formación online? Te resuelvo dudas o te ayudo a encontrar el curso que encaja contigo en un minuto.",
-  "cta": "Encontrar mi curso",
-  "questions": [
-    {
-      "id": "area",
-      "type": "buttons",
-      "text": "¡Genial! ¿Qué área te interesa?",
-      "options": [
-        "Salud",
-        "Empresa y marketing",
-        "Tecnología",
-        "Educación"
-      ],
-      "field": "study_area",
-      "emoji": "📚",
-      "label": "Área"
-    },
-    {
-      "id": "goal",
-      "type": "buttons",
-      "text": "¿Cuál es tu objetivo principal?",
-      "options": [
-        "Encontrar empleo",
-        "Preparar oposiciones",
-        "Mejorar en mi puesto"
-      ],
-      "field": "goal",
-      "emoji": "🎯",
-      "label": "Objetivo"
-    },
-    {
-      "id": "start",
-      "type": "buttons",
-      "text": "¿Cuándo te gustaría empezar?",
-      "options": [
-        "Esta semana",
-        "Este mes",
-        "Más adelante"
-      ],
-      "field": "start_timing",
-      "emoji": "🗓️",
-      "label": "Inicio"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿A qué email te enviamos la información del curso?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de asesores de Euroinnova al instante:",
-  "summary_marker": "Esto es lo que",
-  "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en vuestro CRM. Demo preparada por Landbot para Euroinnova.",
-  "card_badge": "Lead listo · prioridad alta",
-  "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
-  "agent_error": "Perdona, no te he entendido. ¿Quieres que te ayude a encontrar tu curso?",
-  "agent_exit": "El visitante quiere encontrar su curso, solicitar información, matricularse o hablar con un asesor.",
-  "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing y captación de Euroinnova lo que un agente de IA podría hacer en euroinnova.com. Hablas en español y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: Euroinnova ofrece formación online con cursos, másteres, licenciaturas, maestrías, doctorados, diplomados, certificados de profesionalidad y preparación de oposiciones; áreas como salud, derecho, business management, marketing digital, idiomas, recursos humanos, nuevas tecnologías, educación, deporte, ingeniería o arte; titulaciones con universidades colaboradoras; hay becas y financiación, test vocacional y la plataforma MyLXP; para empezar se solicita información y un asesor contacta.\n\nReglas estrictas: nunca des precios, cuotas, importes o porcentajes de becas, descuentos, fechas de inicio ni garantías de admisión; si te lo piden, di que el equipo de asesores de Euroinnova se lo confirma. Nunca pidas datos sensibles (DNI o documento de identidad, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece encontrar tu curso. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo encontrar tu curso.\n\nSal en cuanto el visitante quiera encontrar su curso, solicitar información, matricularse, conocer becas para su caso o hablar con un asesor."
+  {
+   "id": "goal",
+   "type": "buttons",
+   "text": "¿Cuál es tu objetivo principal?",
+   "options": [
+    "Encontrar empleo",
+    "Preparar oposiciones",
+    "Mejorar en mi puesto"
+   ],
+   "field": "goal",
+   "emoji": "🎯",
+   "label": "Objetivo"
+  },
+  {
+   "id": "format",
+   "type": "buttons",
+   "text": "¿Cómo te gustaría estudiar?",
+   "options": [
+    "Online, a mi ritmo",
+    "Me da igual",
+    "Clases presenciales"
+   ],
+   "field": "study_format",
+   "emoji": "💻",
+   "label": "Formato",
+   "disqualify": [
+    2
+   ]
+  },
+  {
+   "id": "start",
+   "type": "buttons",
+   "text": "¿Cuándo te gustaría empezar?",
+   "options": [
+    "Esta semana",
+    "Este mes",
+    "Más adelante",
+    "Solo estoy mirando"
+   ],
+   "field": "start_timing",
+   "emoji": "🗓️",
+   "label": "Inicio",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Esto es lo que recibiría el equipo de Euroinnova:",
+ "summary_marker": "Esto es lo que",
+ "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en vuestro CRM. Demo preparada por Landbot para Euroinnova.",
+ "card_badge": "Lead listo · prioridad alta",
+ "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
+ "agent_error": "Perdona, no te he entendido. ¿Quieres que te ayude a encontrar tu curso?",
+ "agent_exit": "El visitante quiere encontrar su curso, solicitar información, matricularse o hablar con un asesor.",
+ "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing y captación de Euroinnova lo que un agente de IA podría hacer en euroinnova.com. Hablas en español y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: Euroinnova ofrece formación online con cursos, másteres, licenciaturas, maestrías, doctorados, diplomados, certificados de profesionalidad y preparación de oposiciones; áreas como salud, derecho, business management, marketing digital, idiomas, recursos humanos, nuevas tecnologías, educación, deporte, ingeniería o arte; titulaciones con universidades colaboradoras; hay becas y financiación, test vocacional y la plataforma MyLXP; para empezar se solicita información y un asesor contacta.\n\nReglas estrictas: nunca des precios, cuotas, importes o porcentajes de becas, descuentos, fechas de inicio ni garantías de admisión; si te lo piden, di que el equipo de asesores de Euroinnova se lo confirma. Nunca pidas datos sensibles (DNI o documento de identidad, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece encontrar tu curso. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo encontrar tu curso.\n\nSal en cuanto el visitante quiera encontrar su curso, solicitar información, matricularse, conocer becas para su caso o hablar con un asesor.",
+ "routing": {
+  "file_title": "Tu solicitud",
+  "file_done": "Lo que recibe el equipo de Euroinnova",
+  "route_label": "Ruta",
+  "name_label": "Nombre",
+  "phone_label": "Teléfono",
+  "hot_text": "Encajas muy bien y quieres empezar ya. Un asesor de formación de Euroinnova puede llamarte hoy para ayudarte a elegir el curso y explicarte cómo matricularte.",
+  "name_q": "¿Por quién pregunto cuando te llamen?",
+  "phone_q": "¿Y en qué teléfono te localizan mejor?",
+  "warm_text": "Sin prisa. Te enviamos por email los cursos que encajan contigo para que los revises con calma.",
+  "email_q": "¿A qué email te lo enviamos?",
+  "cold_text": "Euroinnova forma 100% online, así que las clases presenciales no son algo que ofrezca. Si te animas a estudiar online, a tu ritmo, aquí tienes un catálogo enorme por áreas.",
+  "hot_label": "Lead caliente. Llamar hoy",
+  "warm_label": "Nurturing. Secuencia de emails",
+  "cold_label": "No encaja. Busca clases presenciales",
+  "hot_closing": "En la versión real, este lead entra en tu CRM y un asesor recibe el aviso al momento. Demo preparada por Landbot para Euroinnova.",
+  "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para Euroinnova.",
+  "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste ninguna llamada en él. Demo preparada por Landbot para Euroinnova."
+ }
 }

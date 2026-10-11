@@ -1,82 +1,113 @@
 {
-  "key": "iwoca",
-  "company": "iwoca",
-  "domain": "iwoca.co.uk",
-  "url": "https://www.iwoca.co.uk",
-  "lang": "en",
-  "format": "experience",
-  "title": "iwoca · Check your options",
-  "palette": {
-    "dark": "#08172b",
-    "dark_hover": "#102f56",
-    "accent": "#fb534a",
-    "accent_soft": "#fff3f2",
-    "accent_line": "#fedddb",
-    "accent_bright": "#fda09b",
-    "bg": "#f6f8fa",
-    "page_bg": "#f6f8fa",
-    "font": "Manrope"
+ "key": "iwoca",
+ "company": "iwoca",
+ "domain": "iwoca.co.uk",
+ "url": "https://www.iwoca.co.uk",
+ "lang": "en",
+ "format": "experience",
+ "title": "iwoca · Check your options",
+ "palette": {
+  "dark": "#08172b",
+  "dark_hover": "#102f56",
+  "accent": "#fb534a",
+  "accent_soft": "#fff3f2",
+  "accent_line": "#fedddb",
+  "accent_bright": "#fda09b",
+  "bg": "#f6f8fa",
+  "page_bg": "#f6f8fa",
+  "font": "Manrope"
+ },
+ "greeting": "Hi there. Looking for flexible funding for your business? Answer four quick questions and see where you stand, or ask me anything first.",
+ "cta": "Check my options",
+ "questions": [
+  {
+   "id": "structure",
+   "type": "buttons",
+   "text": "First, how is your business set up?",
+   "options": [
+    "Limited company",
+    "LLP",
+    "Sole trader"
+   ],
+   "field": "business_structure",
+   "emoji": "🏢",
+   "label": "Business",
+   "disqualify": [
+    2
+   ]
   },
-  "greeting": "Hi there! Looking for flexible funding for your business? I can answer your questions, or check your options with you in about a minute.",
-  "cta": "Check my options",
-  "questions": [
-    {
-      "id": "amount",
-      "type": "buttons",
-      "text": "Great. Roughly how much are you looking to borrow?",
-      "options": [
-        "Under £25k",
-        "£25k to £100k",
-        "£100k to £500k",
-        "Over £500k"
-      ],
-      "field": "loan_amount",
-      "emoji": "💰",
-      "label": "Amount"
-    },
-    {
-      "id": "purpose",
-      "type": "buttons",
-      "text": "And what would the funding be for?",
-      "options": [
-        "Cash flow",
-        "Stock or equipment",
-        "Growth project",
-        "Unexpected cost"
-      ],
-      "field": "loan_purpose",
-      "emoji": "🎯",
-      "label": "Purpose"
-    },
-    {
-      "id": "turnover",
-      "type": "buttons",
-      "text": "What's your business's annual turnover, roughly?",
-      "options": [
-        "Under £100k",
-        "£100k to £500k",
-        "£500k to £2m",
-        "Over £2m"
-      ],
-      "field": "annual_turnover",
-      "emoji": "📈",
-      "label": "Turnover"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Last one. What's the best email to send your options to?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "Thanks! Here is what iwoca's team would receive, instantly:",
-  "summary_marker": "Here is what",
-  "closing": "That's the idea: every business owner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for iwoca.",
-  "card_badge": "Lead ready · priority high",
-  "error_text": "That doesn't look right. Could you check it?",
-  "agent_error": "Sorry, I didn't catch that. Want to check your options instead?",
-  "agent_exit": "The visitor wants to check their options, apply, get a decision, or know how much their business could borrow.",
-  "agent_instructions": "You are a demo assistant built by Landbot to show iwoca's marketing team what an AI agent on iwoca.co.uk could do. You help UK small business owners understand iwoca using only what its homepage says. You may explain: the Flexi-Loan for flexible business funding, drawing down only what you need and repaying at a pace that suits the business, with short-term cash flow funding for urgent or one-off costs; that applying online takes about 5 minutes and won't affect the credit score; that iwoca aims to give a decision within 24 hours and approved money can reach the account within hours; that repaying early is free and top-ups are available; that iwoca accepts UK-based limited companies and LLPs of any age or industry, and needs basic business details plus a year of bank statements or an Open Banking link; that iwoca also offers a business credit card and iwocaPay; and that the team can be reached by phone Monday to Friday, 9am to 6pm. Hard rules: never quote or estimate interest rates, APR, fees, repayments, borrowing limits or approval odds, even when the site shows example figures; never promise approval or a funding amount; never ask for sensitive data such as bank details, passwords, card numbers or personal ID; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to check their options with them. Exit as soon as the visitor wants to check their options, apply, get a decision, or know how much their business could borrow."
+  {
+   "id": "amount",
+   "type": "buttons",
+   "text": "Roughly how much are you looking to borrow?",
+   "options": [
+    "Under £25k",
+    "£25k to £100k",
+    "£100k to £500k",
+    "Over £500k"
+   ],
+   "field": "loan_amount",
+   "emoji": "💰",
+   "label": "Amount"
+  },
+  {
+   "id": "purpose",
+   "type": "buttons",
+   "text": "What would the funding be for?",
+   "options": [
+    "Cash flow",
+    "Stock or equipment",
+    "Growth project",
+    "Unexpected cost"
+   ],
+   "field": "loan_purpose",
+   "emoji": "🎯",
+   "label": "Purpose"
+  },
+  {
+   "id": "timing",
+   "type": "buttons",
+   "text": "When do you need the money?",
+   "options": [
+    "This week",
+    "This month",
+    "In a few months",
+    "Just exploring"
+   ],
+   "field": "funding_timing",
+   "emoji": "⏱️",
+   "label": "Timing",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Here is what iwoca's team would receive:",
+ "summary_marker": "Here is what",
+ "closing": "That's the idea: every business owner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for iwoca.",
+ "card_badge": "Lead ready · priority high",
+ "error_text": "That doesn't look right. Could you check it?",
+ "agent_error": "Sorry, I didn't catch that. Want to check your options instead?",
+ "agent_exit": "The visitor wants to check their options, apply, get a decision, or know how much their business could borrow.",
+ "agent_instructions": "You are a demo assistant built by Landbot to show iwoca's marketing team what an AI agent on iwoca.co.uk could do. You help UK small business owners understand iwoca using only what its homepage says. You may explain: the Flexi-Loan for flexible business funding, drawing down only what you need and repaying at a pace that suits the business, with short-term cash flow funding for urgent or one-off costs; that applying online takes about 5 minutes and won't affect the credit score; that iwoca aims to give a decision within 24 hours and approved money can reach the account within hours; that repaying early is free and top-ups are available; that iwoca accepts UK-based limited companies and LLPs of any age or industry, and needs basic business details plus a year of bank statements or an Open Banking link; that iwoca also offers a business credit card and iwocaPay; and that the team can be reached by phone Monday to Friday, 9am to 6pm. Hard rules: never quote or estimate interest rates, APR, fees, repayments, borrowing limits or approval odds, even when the site shows example figures; never promise approval or a funding amount; never ask for sensitive data such as bank details, passwords, card numbers or personal ID; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to check their options with them. Exit as soon as the visitor wants to check their options, apply, get a decision, or know how much their business could borrow.",
+ "routing": {
+  "file_title": "Your request",
+  "file_done": "What iwoca's team receives",
+  "route_label": "Route",
+  "name_label": "Name",
+  "phone_label": "Phone",
+  "hot_text": "You look like a strong fit for a Flexi-Loan. A business finance specialist can call you today to talk through how much and how you'd repay.",
+  "name_q": "Who should they ask for?",
+  "phone_q": "And the best number to reach you?",
+  "warm_text": "No rush. We can email you how the Flexi-Loan works so you can come back when the timing is right.",
+  "email_q": "Where should we send it?",
+  "cold_text": "iwoca lends to UK limited companies and LLPs, so a sole trader application isn't something they can take. If you incorporate later, they'd be glad to hear from you.",
+  "hot_label": "Hot lead. Call today",
+  "warm_label": "Nurture. Email sequence",
+  "cold_label": "Not a fit. Sole trader",
+  "hot_closing": "In the real version, this lead lands in your CRM and a specialist is alerted right away. Demo prepared by Landbot for iwoca.",
+  "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for iwoca.",
+  "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for iwoca."
+ }
 }

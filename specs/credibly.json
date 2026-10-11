@@ -1,82 +1,114 @@
 {
-  "key": "credibly",
-  "company": "Credibly",
-  "domain": "credibly.com",
-  "url": "https://www.credibly.com",
-  "lang": "en",
-  "format": "experience",
-  "title": "Credibly · See your options",
-  "palette": {
-    "dark": "#214155",
-    "dark_hover": "#2c5670",
-    "accent": "#ff530b",
-    "accent_soft": "#fff3ee",
-    "accent_line": "#ffddce",
-    "accent_bright": "#ffa079",
-    "bg": "#f6f9fc",
-    "page_bg": "#f6f9fc",
-    "font": "Poppins"
+ "key": "credibly",
+ "company": "Credibly",
+ "domain": "credibly.com",
+ "url": "https://www.credibly.com",
+ "lang": "en",
+ "format": "experience",
+ "title": "Credibly · See your options",
+ "palette": {
+  "dark": "#214155",
+  "dark_hover": "#2c5670",
+  "accent": "#ff530b",
+  "accent_soft": "#fff3ee",
+  "accent_line": "#ffddce",
+  "accent_bright": "#ffa079",
+  "bg": "#f6f9fc",
+  "page_bg": "#f6f9fc",
+  "font": "Poppins"
+ },
+ "greeting": "Hi there. Looking for funding to keep your business moving? Answer four quick questions and see where you stand, or ask me anything first.",
+ "cta": "See my options",
+ "questions": [
+  {
+   "id": "amount",
+   "type": "buttons",
+   "text": "How much funding are you looking for?",
+   "options": [
+    "Under $25k",
+    "$25k to $100k",
+    "$100k to $250k",
+    "Over $250k"
+   ],
+   "field": "funding_amount",
+   "emoji": "💰",
+   "label": "Amount"
   },
-  "greeting": "Hi there! Looking for funding to keep your business moving? I can answer your questions, or see what you might qualify for in about a minute.",
-  "cta": "See my options",
-  "questions": [
-    {
-      "id": "amount",
-      "type": "buttons",
-      "text": "Great. How much funding are you looking for?",
-      "options": [
-        "Under $25k",
-        "$25k to $100k",
-        "$100k to $250k",
-        "Over $250k"
-      ],
-      "field": "funding_amount",
-      "emoji": "💰",
-      "label": "Amount"
-    },
-    {
-      "id": "time_in_business",
-      "type": "buttons",
-      "text": "How long has your business been operating?",
-      "options": [
-        "Under 6 months",
-        "6 to 12 months",
-        "1 to 3 years",
-        "Over 3 years"
-      ],
-      "field": "time_in_business",
-      "emoji": "🏢",
-      "label": "Time in business"
-    },
-    {
-      "id": "revenue",
-      "type": "buttons",
-      "text": "And roughly what's your monthly revenue?",
-      "options": [
-        "Under $15k",
-        "$15k to $50k",
-        "$50k to $150k",
-        "Over $150k"
-      ],
-      "field": "monthly_revenue",
-      "emoji": "📈",
-      "label": "Revenue"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Last one. What's the best email to send your options to?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "Thanks! Here is what Credibly's team would receive, instantly:",
-  "summary_marker": "Here is what",
-  "closing": "That's the idea: every business owner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Credibly.",
-  "card_badge": "Lead ready · priority high",
-  "error_text": "That doesn't look right. Could you check it?",
-  "agent_error": "Sorry, I didn't catch that. Want to see your options instead?",
-  "agent_exit": "The visitor wants to see their options, apply, find out how much they qualify for, or check whether they meet the requirements.",
-  "agent_instructions": "You are a demo assistant built by Landbot to show Credibly's marketing team what an AI agent on credibly.com could do. You help US small business owners understand Credibly using only what its homepage says. You may explain the financing options: working capital loans for businesses with steady revenue, merchant cash advances for seasonal or fluctuating revenue with remittances based on card sales, a revolving business line of credit where you pay only on what you draw, equipment financing, long-term loans and SBA loans, plus Credibly Business Checking. You may say that applying will not hurt the credit score, that approval can come in as soon as 2 hours, that Credibly serves more than 1,000 industries, and that the homepage lists its basic requirements (operating in the United States, time in business, monthly revenue deposited in a business bank account and a credit score), and that the team can be reached by phone or through Apply Now. Hard rules: never quote or estimate rates, factor rates, fees, funding amounts or limits, or approval odds; never promise approval or a funding amount; never ask for sensitive data such as bank account numbers, SSN or EIN, passwords or card numbers; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to see their options with them. Exit as soon as the visitor wants to see their options, apply, find out how much they qualify for, or check whether they meet the requirements."
+  {
+   "id": "time_in_business",
+   "type": "buttons",
+   "text": "How long has your business been operating?",
+   "options": [
+    "Under 6 months",
+    "6 to 12 months",
+    "1 to 3 years",
+    "Over 3 years"
+   ],
+   "field": "time_in_business",
+   "emoji": "🏢",
+   "label": "Time in business",
+   "disqualify": [
+    0
+   ]
+  },
+  {
+   "id": "use",
+   "type": "buttons",
+   "text": "What would the funding cover?",
+   "options": [
+    "Working capital",
+    "Equipment",
+    "Seasonal cash gap",
+    "Expansion"
+   ],
+   "field": "funding_use",
+   "emoji": "🎯",
+   "label": "Use"
+  },
+  {
+   "id": "timing",
+   "type": "buttons",
+   "text": "How soon do you need the funds?",
+   "options": [
+    "In the next few days",
+    "This month",
+    "In a few months",
+    "Just comparing"
+   ],
+   "field": "funding_timing",
+   "emoji": "⏱️",
+   "label": "Timing",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Here is what Credibly's team would receive:",
+ "summary_marker": "Here is what",
+ "closing": "That's the idea: every business owner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Credibly.",
+ "card_badge": "Lead ready · priority high",
+ "error_text": "That doesn't look right. Could you check it?",
+ "agent_error": "Sorry, I didn't catch that. Want to see your options instead?",
+ "agent_exit": "The visitor wants to see their options, apply, find out how much they qualify for, or check whether they meet the requirements.",
+ "agent_instructions": "You are a demo assistant built by Landbot to show Credibly's marketing team what an AI agent on credibly.com could do. You help US small business owners understand Credibly using only what its homepage says. You may explain the financing options: working capital loans for businesses with steady revenue, merchant cash advances for seasonal or fluctuating revenue with remittances based on card sales, a revolving business line of credit where you pay only on what you draw, equipment financing, long-term loans and SBA loans, plus Credibly Business Checking. You may say that applying will not hurt the credit score, that approval can come in as soon as 2 hours, that Credibly serves more than 1,000 industries, and that the homepage lists its basic requirements (operating in the United States, time in business, monthly revenue deposited in a business bank account and a credit score), and that the team can be reached by phone or through Apply Now. Hard rules: never quote or estimate rates, factor rates, fees, funding amounts or limits, or approval odds; never promise approval or a funding amount; never ask for sensitive data such as bank account numbers, SSN or EIN, passwords or card numbers; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to see their options with them. Exit as soon as the visitor wants to see their options, apply, find out how much they qualify for, or check whether they meet the requirements.",
+ "routing": {
+  "file_title": "Your request",
+  "file_done": "What Credibly's team receives",
+  "route_label": "Route",
+  "name_label": "Name",
+  "phone_label": "Phone",
+  "hot_text": "You look like a strong fit. A funding specialist can call you today to go through your options and the documents you'd need.",
+  "name_q": "Who should they ask for?",
+  "phone_q": "And the best number to reach you?",
+  "warm_text": "No rush. We can email you an overview of Credibly's financing options so you can compare when you're ready.",
+  "email_q": "Where should we send it?",
+  "cold_text": "Credibly generally asks for at least 6 months in business, so it's a little early to apply. Once you pass that mark, they'd be glad to take a look.",
+  "hot_label": "Hot lead. Call today",
+  "warm_label": "Nurture. Email sequence",
+  "cold_label": "Not a fit. Under 6 months trading",
+  "hot_closing": "In the real version, this lead lands in your CRM and a specialist is alerted right away. Demo prepared by Landbot for Credibly.",
+  "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for Credibly.",
+  "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for Credibly."
+ }
 }

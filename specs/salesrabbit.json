@@ -17,13 +17,29 @@
     "page_bg": "#f8f8f8",
     "font": "Archivo"
   },
-  "greeting": "Hey there! Running a field sales team? Ask me anything about SalesRabbit, or let's set you up with a quick demo.",
+  "greeting": "Hey there. Running a field sales team? Answer four quick questions to set up your demo, or ask me anything about SalesRabbit first.",
   "cta": "Book a demo",
   "questions": [
     {
+      "id": "channel",
+      "type": "buttons",
+      "text": "How does your team sell?",
+      "options": [
+        "Door to door",
+        "In-home appointments",
+        "Phone or online only"
+      ],
+      "field": "sales_channel",
+      "emoji": "🚪",
+      "label": "Channel",
+      "disqualify": [
+        2
+      ]
+    },
+    {
       "id": "industry",
       "type": "buttons",
-      "text": "Nice. What industry do your reps sell in?",
+      "text": "What industry do your reps sell in?",
       "options": [
         "Roofing",
         "Solar",
@@ -39,44 +55,59 @@
       "type": "buttons",
       "text": "How many reps are on your team?",
       "options": [
-        "1 to 10",
+        "Just me",
+        "2 to 10",
         "11 to 50",
-        "51 to 200",
-        "More than 200"
+        "More than 50"
       ],
       "field": "rep_count",
       "emoji": "👥",
       "label": "Reps"
     },
     {
-      "id": "goal",
+      "id": "timing",
       "type": "buttons",
-      "text": "What's your main goal right now?",
+      "text": "When do you want your reps on it?",
       "options": [
-        "Find better leads",
-        "Manage territories",
-        "Motivate my reps",
-        "Close deals faster"
+        "This month",
+        "This quarter",
+        "Later this year",
+        "Just researching"
       ],
-      "field": "main_goal",
-      "emoji": "🎯",
-      "label": "Goal"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Last one. What's your work email so we can send the demo details?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
+      "field": "timing",
+      "emoji": "⏱️",
+      "label": "Timing",
+      "hot": [
+        0,
+        1
+      ]
     }
   ],
-  "summary_intro": "Thanks! Here is what SalesRabbit's team would receive, instantly:",
+  "summary_intro": "Here is what SalesRabbit's team would receive:",
   "summary_marker": "Here is what",
   "closing": "That's the idea: every visitor answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for SalesRabbit.",
   "card_badge": "Lead ready · priority high",
   "error_text": "That doesn't look right. Could you check it?",
   "agent_error": "Sorry, I didn't catch that. Want to book a demo instead?",
   "agent_exit": "The visitor wants a demo, pricing, or to talk to sales.",
-  "agent_instructions": "You are a demo assistant built by Landbot to show SalesRabbit's marketing team what an AI agent on salesrabbit.com could do. You may only talk about what their homepage shows: SalesRabbit is an all-in-one platform for field and door-to-door sales teams in roofing, solar, telecom and fiber, pest control, home security, HVAC and more. It covers canvassing and territory mapping, lead management, DataGrid AI buyer scores that use machine learning to find likely customers, Amplify reporting and gamification, a Scheduler that syncs with Google or Outlook calendars, Digital Contracts with e-signatures, Movers data on new homeowners, and storm and weather overlays. RoofLink is its roofing CRM and SalesRabbit Lite is a free entry app. There are plans for enterprise, small and medium businesses and individuals, and it is trusted by over 85,000 sales professionals.\n\nHard rules: never quote prices, plans or discounts, and never promise results, features or timelines. Never ask for sensitive data such as passwords or payment details. Never invent facts; if you don't know, say the SalesRabbit team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to book a demo.\n\nExit as soon as the visitor wants a demo, asks about pricing, or wants to talk to sales."
+  "agent_instructions": "You are a demo assistant built by Landbot to show SalesRabbit's marketing team what an AI agent on salesrabbit.com could do. You may only talk about what their homepage shows: SalesRabbit is an all-in-one platform for field and door-to-door sales teams in roofing, solar, telecom and fiber, pest control, home security, HVAC and more. It covers canvassing and territory mapping, lead management, DataGrid AI buyer scores that use machine learning to find likely customers, Amplify reporting and gamification, a Scheduler that syncs with Google or Outlook calendars, Digital Contracts with e-signatures, Movers data on new homeowners, and storm and weather overlays. RoofLink is its roofing CRM and SalesRabbit Lite is a free entry app. There are plans for enterprise, small and medium businesses and individuals, and it is trusted by over 85,000 sales professionals.\n\nHard rules: never quote prices, plans or discounts, and never promise results, features or timelines. Never ask for sensitive data such as passwords or payment details. Never invent facts; if you don't know, say the SalesRabbit team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to book a demo.\n\nExit as soon as the visitor wants a demo, asks about pricing, or wants to talk to sales.",
+  "routing": {
+    "file_title": "Your request",
+    "file_done": "What SalesRabbit's team receives",
+    "route_label": "Route",
+    "name_label": "Name",
+    "phone_label": "Phone",
+    "hot_text": "You look like a strong fit and you're ready to move. Someone from the SalesRabbit team can call you today to set up a demo built around your territory.",
+    "name_q": "Who should they ask for?",
+    "phone_q": "And the best number to reach you?",
+    "warm_text": "No rush. We can email you a walkthrough and field sales resources to look at in your own time.",
+    "email_q": "What's your work email?",
+    "cold_text": "SalesRabbit is built for teams that sell in the field, door to door or in the home, so a phone or online-only team won't get much from it. An inside sales CRM will fit you better.",
+    "hot_label": "Hot lead. Call today",
+    "warm_label": "Nurture. Email sequence",
+    "cold_label": "Not a fit. Not field sales",
+    "hot_closing": "In the real version, this lead lands in your CRM and the right person is alerted right away. Demo prepared by Landbot for SalesRabbit.",
+    "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for SalesRabbit.",
+    "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for SalesRabbit."
+  }
 }

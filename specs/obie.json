@@ -17,13 +17,13 @@
     "page_bg": "#f6f7f9",
     "font": "Geist"
   },
-  "greeting": "Hi there! Insuring a rental property? I can answer your questions, or line up your landlord quote in about a minute.",
+  "greeting": "Hi there. Insuring a rental property? Answer four quick questions to line up your landlord quote, or ask me anything first.",
   "cta": "Start my quote",
   "questions": [
     {
       "id": "property",
       "type": "buttons",
-      "text": "Great. What kind of property is it?",
+      "text": "What kind of property is it?",
       "options": [
         "Single family",
         "Multifamily (2-4)",
@@ -33,6 +33,22 @@
       "field": "property_type",
       "emoji": "🏠",
       "label": "Property"
+    },
+    {
+      "id": "occupancy",
+      "type": "buttons",
+      "text": "Who lives there?",
+      "options": [
+        "Long-term tenants",
+        "Vacant, to rent out",
+        "It's my own home"
+      ],
+      "field": "occupancy",
+      "emoji": "🔑",
+      "label": "Occupancy",
+      "disqualify": [
+        2
+      ]
     },
     {
       "id": "portfolio",
@@ -53,30 +69,45 @@
       "type": "buttons",
       "text": "What's bringing you here today?",
       "options": [
-        "Closing on a property",
-        "Renewing a policy",
+        "Closing soon",
+        "Policy renewing soon",
         "Switching insurers",
         "Just exploring"
       ],
       "field": "timing",
       "emoji": "⏱️",
-      "label": "Timing"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Last one. What's the best email to send your quote to?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
+      "label": "Timing",
+      "hot": [
+        0,
+        1
+      ]
     }
   ],
-  "summary_intro": "Thanks! Here is what Obie's team would receive, instantly:",
+  "summary_intro": "Here is what Obie's team would receive:",
   "summary_marker": "Here is what",
   "closing": "That's the idea: every landlord answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Obie Insurance.",
   "card_badge": "Lead ready · priority high",
   "error_text": "That doesn't look right. Could you check it?",
   "agent_error": "Sorry, I didn't catch that. Want to start your quote instead?",
   "agent_exit": "The visitor wants a quote, wants to know what their coverage would cost, or wants to get covered or buy a policy.",
-  "agent_instructions": "You are a demo assistant built by Landbot to show Obie Insurance's marketing team what an AI agent on obieinsurance.com could do. You may only talk about what their homepage shows: Obie offers landlord insurance for real estate investors, covering single family homes, multifamily buildings (2 to 4 units), apartment buildings (5+ units) and condo units. Visitors can get a quote online in seconds with no lengthy forms, customize their policy to pay only for what they need, and activate coverage online. Obie also works with lenders (helping meet lender insurance requirements so closings move faster), agents, property managers and technology partners through embedded insurance, and it partners with RentSpree. There is a Knowledge Hub, a Risk Map of local property risks, and support Monday to Friday, 9am to 8pm ET.\n\nHard rules: never quote prices, premiums, rates, deductibles, coverage limits or discounts, and never say whether a property or person will be accepted. Never promise anything, including how fast a claim or closing will go. Never ask for sensitive data such as Social Security numbers, policy numbers or payment details. Never invent facts; if you don't know, say the Obie team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to start their quote.\n\nExit as soon as the visitor wants a quote, asks what coverage would cost, or wants to get covered or buy a policy."
+  "agent_instructions": "You are a demo assistant built by Landbot to show Obie Insurance's marketing team what an AI agent on obieinsurance.com could do. You may only talk about what their homepage shows: Obie offers landlord insurance for real estate investors, covering single family homes, multifamily buildings (2 to 4 units), apartment buildings (5+ units) and condo units. Visitors can get a quote online in seconds with no lengthy forms, customize their policy to pay only for what they need, and activate coverage online. Obie also works with lenders (helping meet lender insurance requirements so closings move faster), agents, property managers and technology partners through embedded insurance, and it partners with RentSpree. There is a Knowledge Hub, a Risk Map of local property risks, and support Monday to Friday, 9am to 8pm ET.\n\nHard rules: never quote prices, premiums, rates, deductibles, coverage limits or discounts, and never say whether a property or person will be accepted. Never promise anything, including how fast a claim or closing will go. Never ask for sensitive data such as Social Security numbers, policy numbers or payment details. Never invent facts; if you don't know, say the Obie team can help. If asked, say this is a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists. End most answers by offering to start their quote.\n\nExit as soon as the visitor wants a quote, asks what coverage would cost, or wants to get covered or buy a policy.",
+  "routing": {
+    "file_title": "Your request",
+    "file_done": "What Obie's team receives",
+    "route_label": "Route",
+    "name_label": "Name",
+    "phone_label": "Phone",
+    "hot_text": "You look like a strong fit, and with a date coming up it pays to move early. An Obie advisor can call you today to walk through your quote.",
+    "name_q": "Who should they ask for?",
+    "phone_q": "And the best number to reach you?",
+    "warm_text": "No rush. We can email you what you need to compare coverage in your own time.",
+    "email_q": "Where should we send it?",
+    "cold_text": "Obie insures rental and investment properties, so a home you live in yourself needs a homeowners policy instead. If you rent it out later, Obie can quote it then.",
+    "hot_label": "Hot lead. Call today",
+    "warm_label": "Nurture. Email sequence",
+    "cold_label": "Not a fit. Owner-occupied home",
+    "hot_closing": "In the real version, this lead lands in your CRM and the right person is alerted right away. Demo prepared by Landbot for Obie.",
+    "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for Obie.",
+    "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for Obie."
+  }
 }

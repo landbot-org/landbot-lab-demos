@@ -1,82 +1,100 @@
 {
-  "key": "hippo",
-  "company": "Hippo",
-  "domain": "hippo.com",
-  "url": "https://www.hippo.com",
-  "lang": "en",
-  "format": "experience",
-  "title": "Hippo · Start your quote",
-  "palette": {
-    "dark": "#002e1b",
-    "dark_hover": "#00482b",
-    "accent": "#007848",
-    "accent_soft": "#e6f4ef",
-    "accent_line": "#bbe2d3",
-    "accent_bright": "#20bc7d",
-    "bg": "#f1f4f3",
-    "page_bg": "#f1f4f3",
-    "font": "DM Sans"
+ "key": "hippo",
+ "company": "Hippo",
+ "domain": "hippo.com",
+ "url": "https://www.hippo.com",
+ "lang": "en",
+ "format": "experience",
+ "title": "Hippo · Start your quote",
+ "palette": {
+  "dark": "#002e1b",
+  "dark_hover": "#00482b",
+  "accent": "#007848",
+  "accent_soft": "#e6f4ef",
+  "accent_line": "#bbe2d3",
+  "accent_bright": "#20bc7d",
+  "bg": "#f1f4f3",
+  "page_bg": "#f1f4f3",
+  "font": "DM Sans"
+ },
+ "greeting": "Hi there. Shopping for home insurance? Answer three quick questions and get your quote started, or ask me anything first.",
+ "cta": "Start my quote",
+ "questions": [
+  {
+   "id": "home_type",
+   "type": "buttons",
+   "text": "What kind of home is it?",
+   "options": [
+    "Single-family home",
+    "Condo or townhouse",
+    "A rental I own",
+    "I rent my home"
+   ],
+   "field": "home_type",
+   "emoji": "🏠",
+   "label": "Home",
+   "disqualify": [
+    3
+   ]
   },
-  "greeting": "Hi there! Shopping for home insurance? I can answer your questions, or get your quote started in about a minute.",
-  "cta": "Start my quote",
-  "questions": [
-    {
-      "id": "home_type",
-      "type": "buttons",
-      "text": "Great. What kind of home is it?",
-      "options": [
-        "Single-family home",
-        "Condo or townhouse",
-        "A rental I own",
-        "Something else"
-      ],
-      "field": "home_type",
-      "emoji": "🏠",
-      "label": "Home"
-    },
-    {
-      "id": "reason",
-      "type": "buttons",
-      "text": "What's got you looking right now?",
-      "options": [
-        "Buying a home",
-        "Renewal coming up",
-        "Paying too much",
-        "Just comparing"
-      ],
-      "field": "shopping_reason",
-      "emoji": "🎯",
-      "label": "Reason"
-    },
-    {
-      "id": "addons",
-      "type": "buttons",
-      "text": "Anything else you'd like to protect?",
-      "options": [
-        "Auto",
-        "Flood",
-        "Pet",
-        "Just my home"
-      ],
-      "field": "add_ons",
-      "emoji": "🚗",
-      "label": "Add-ons"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Last one. What's the best email to send your quote options to?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "Thanks! Here is what Hippo's team would receive, instantly:",
-  "summary_marker": "Here is what",
-  "closing": "That's the idea: every homeowner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Hippo.",
-  "card_badge": "Lead ready · priority high",
-  "error_text": "That doesn't look right. Could you check it?",
-  "agent_error": "Sorry, I didn't catch that. Want to start your quote instead?",
-  "agent_exit": "The visitor wants a quote, wants to compare prices, wants to switch their insurance to Hippo, or wants to talk to an agent.",
-  "agent_instructions": "You are a demo assistant built by Landbot to show Hippo's marketing team what an AI agent on hippo.com could do. You help homeowners understand Hippo using only what its homepage says. You may explain: homeowners insurance, Hippo+, landlord and fire insurance, and add-ons such as auto, flood and pet insurance; how it works (tell us about your home with your address and basic details, compare personalized quote options from more than 70 carrier partners, then choose a policy with a dedicated agent); that getting a quote takes under 60 seconds and won't affect the credit score; that switching is simple and Hippo can help line up the new policy to start when the current one ends; that Hippo partners with A- rated insurers and above; that the Hippo Home app offers maintenance checklists and home care tips; and that claims, FAQs and Contact us are linked on the site. Hard rules: never quote or estimate prices, premiums, discounts, deductibles, coverage amounts or limits, or what a specific claim would pay; never promise coverage, a price or that a claim will be paid; never ask for sensitive data such as Social Security numbers, card numbers, bank details or passwords; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to start their quote. Exit as soon as the visitor wants a quote, wants to compare prices, wants to switch their insurance to Hippo, or wants to talk to an agent."
+  {
+   "id": "addons",
+   "type": "buttons",
+   "text": "Anything else you'd like to protect?",
+   "options": [
+    "Auto",
+    "Flood",
+    "Pet",
+    "Just my home"
+   ],
+   "field": "add_ons",
+   "emoji": "🚗",
+   "label": "Add-ons"
+  },
+  {
+   "id": "reason",
+   "type": "buttons",
+   "text": "What's got you looking right now?",
+   "options": [
+    "Buying a home",
+    "Renewal coming up",
+    "Paying too much",
+    "Just comparing"
+   ],
+   "field": "shopping_reason",
+   "emoji": "🎯",
+   "label": "Reason",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Here is what Hippo's team would receive:",
+ "summary_marker": "Here is what",
+ "closing": "That's the idea: every homeowner answered and qualified in under a minute, with the data already in your CRM. This demo was prepared by Landbot for Hippo.",
+ "card_badge": "Lead ready · priority high",
+ "error_text": "That doesn't look right. Could you check it?",
+ "agent_error": "Sorry, I didn't catch that. Want to start your quote instead?",
+ "agent_exit": "The visitor wants a quote, wants to compare prices, wants to switch their insurance to Hippo, or wants to talk to an agent.",
+ "agent_instructions": "You are a demo assistant built by Landbot to show Hippo's marketing team what an AI agent on hippo.com could do. You help homeowners understand Hippo using only what its homepage says. You may explain: homeowners insurance, Hippo+, landlord and fire insurance, and add-ons such as auto, flood and pet insurance; how it works (tell us about your home with your address and basic details, compare personalized quote options from more than 70 carrier partners, then choose a policy with a dedicated agent); that getting a quote takes under 60 seconds and won't affect the credit score; that switching is simple and Hippo can help line up the new policy to start when the current one ends; that Hippo partners with A- rated insurers and above; that the Hippo Home app offers maintenance checklists and home care tips; and that claims, FAQs and Contact us are linked on the site. Hard rules: never quote or estimate prices, premiums, discounts, deductibles, coverage amounts or limits, or what a specific claim would pay; never promise coverage, a price or that a claim will be paid; never ask for sensitive data such as Social Security numbers, card numbers, bank details or passwords; never invent facts, and if you do not know, say the team can help. If anyone asks, say plainly that you are a demo built by Landbot. Answer in 2 or 3 short sentences, in plain text with no markdown or lists, and end most answers by offering to start their quote. Exit as soon as the visitor wants a quote, wants to compare prices, wants to switch their insurance to Hippo, or wants to talk to an agent.",
+ "routing": {
+  "file_title": "Your request",
+  "file_done": "What Hippo's team receives",
+  "route_label": "Route",
+  "name_label": "Name",
+  "phone_label": "Phone",
+  "hot_text": "You look like a strong fit. A licensed Hippo agent can call you today to compare quotes and line up a start date that works.",
+  "name_q": "Who should they ask for?",
+  "phone_q": "And the best number to reach you?",
+  "warm_text": "No rush. We can email you your quote options so you can compare in your own time.",
+  "email_q": "Where should we send them?",
+  "cold_text": "Hippo insures homes you own, including rentals you own as a landlord, so renters cover isn't something they offer. A renters insurance provider will be a better fit.",
+  "hot_label": "Hot lead. Call today",
+  "warm_label": "Nurture. Email sequence",
+  "cold_label": "Not a fit. Renter, not owner",
+  "hot_closing": "In the real version, this lead lands in your CRM and an agent is alerted right away. Demo prepared by Landbot for Hippo.",
+  "warm_closing": "In the real version, this lead joins your email nurture with every answer attached. Demo prepared by Landbot for Hippo.",
+  "cold_closing": "Filtered politely, so your team never spends a call on it. Demo prepared by Landbot for Hippo."
+ }
 }

@@ -1,82 +1,100 @@
 {
-  "key": "exoticca",
-  "company": "Exoticca",
-  "domain": "exoticca.com",
-  "url": "https://www.exoticca.com/es",
-  "lang": "es",
-  "format": "chat",
-  "title": "Exoticca · Encuentra tu viaje",
-  "palette": {
-    "dark": "#121212",
-    "dark_hover": "#303030",
-    "accent": "#a41517",
-    "accent_soft": "#fbeaea",
-    "accent_line": "#efc0c1",
-    "accent_bright": "#f8d447",
-    "bg": "#f1f1f1",
-    "page_bg": "#f1f1f1",
-    "font": "Rubik"
+ "key": "exoticca",
+ "company": "Exoticca",
+ "domain": "exoticca.com",
+ "url": "https://www.exoticca.com/es",
+ "lang": "es",
+ "format": "chat",
+ "title": "Exoticca · Encuentra tu viaje",
+ "palette": {
+  "dark": "#121212",
+  "dark_hover": "#303030",
+  "accent": "#a41517",
+  "accent_soft": "#fbeaea",
+  "accent_line": "#efc0c1",
+  "accent_bright": "#f8d447",
+  "bg": "#f1f1f1",
+  "page_bg": "#f1f1f1",
+  "font": "Rubik"
+ },
+ "greeting": "Hola. ¿Pensando en tu próximo gran viaje? Contesta tres preguntas rápidas y te digo qué circuitos encajan contigo, o pregúntame lo que quieras primero.",
+ "cta": "Ver viajes para mí",
+ "questions": [
+  {
+   "id": "destination",
+   "type": "buttons",
+   "text": "¿A dónde te apetece ir?",
+   "options": [
+    "Asia o América",
+    "África",
+    "Europa",
+    "Por España"
+   ],
+   "field": "destination_region",
+   "emoji": "🌍",
+   "label": "Destino",
+   "disqualify": [
+    3
+   ]
   },
-  "greeting": "¡Hola! ¿Pensando en tu próximo gran viaje? Te resuelvo dudas o te enseño los circuitos que encajan contigo en un minuto.",
-  "cta": "Ver viajes para mí",
-  "questions": [
-    {
-      "id": "region",
-      "type": "buttons",
-      "text": "¡Genial! ¿Qué parte del mundo te apetece?",
-      "options": [
-        "Asia",
-        "América",
-        "África",
-        "Europa"
-      ],
-      "field": "destination_region",
-      "emoji": "🌍",
-      "label": "Destino"
-    },
-    {
-      "id": "when",
-      "type": "buttons",
-      "text": "¿Cuándo te gustaría viajar?",
-      "options": [
-        "Próximos 3 meses",
-        "En 3 a 6 meses",
-        "Más adelante",
-        "Aún no lo sé"
-      ],
-      "field": "travel_timing",
-      "emoji": "🗓️",
-      "label": "Fecha"
-    },
-    {
-      "id": "travellers",
-      "type": "buttons",
-      "text": "¿Con quién viajas?",
-      "options": [
-        "Solo",
-        "En pareja",
-        "En familia",
-        "Con amigos"
-      ],
-      "field": "travellers",
-      "emoji": "👥",
-      "label": "Viajeros"
-    },
-    {
-      "id": "email",
-      "type": "email",
-      "text": "Última pregunta. ¿A qué email te enviamos los viajes que encajan contigo?",
-      "field": "email",
-      "emoji": "✉️",
-      "label": "Email"
-    }
-  ],
-  "summary_intro": "¡Gracias! Esto es lo que recibiría el equipo de expertos en viajes de Exoticca al instante:",
-  "summary_marker": "Esto es lo que",
-  "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en vuestro CRM. Demo preparada por Landbot para Exoticca.",
-  "card_badge": "Lead listo · prioridad alta",
-  "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
-  "agent_error": "Perdona, no te he entendido. ¿Quieres ver los viajes que encajan contigo?",
-  "agent_exit": "El visitante quiere ver viajes para él, reservar, pedir presupuesto o hablar con un experto.",
-  "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing de Exoticca lo que un agente de IA podría hacer en exoticca.com/es. Hablas en español de España y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: Exoticca vende circuitos de varios días con vuelos incluidos a destinos de África, América, Asia, Europa y Oceanía; se puede buscar por estilo de viaje (cultura, safari, aventura, naturaleza, playa, multidestino, navega & explora) y por perfil (familia, parejas, viajar solo, senior); destacan experiencias extraordinarias, asistencia 24/7 y un programa de recompensas, Exoticca GO; se puede reservar online o hablar con un experto por teléfono.\n\nReglas estrictas: nunca des precios, descuentos, ofertas, fechas de salida, disponibilidad ni condiciones de pago o cancelación; si te lo piden, di que un experto de Exoticca se lo confirma. Nunca pidas datos sensibles (DNI, pasaporte, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece ver viajes para él. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo ver viajes para él.\n\nSal en cuanto el visitante quiera ver viajes para él, reservar, pedir presupuesto, preguntar precios para su caso o hablar con un experto."
+  {
+   "id": "travellers",
+   "type": "buttons",
+   "text": "¿Con quién viajas?",
+   "options": [
+    "Solo",
+    "En pareja",
+    "En familia",
+    "Con amigos"
+   ],
+   "field": "travellers",
+   "emoji": "👥",
+   "label": "Viajeros"
+  },
+  {
+   "id": "when",
+   "type": "buttons",
+   "text": "¿Cuándo te gustaría viajar?",
+   "options": [
+    "Próximos 3 meses",
+    "En 3 a 6 meses",
+    "Más adelante",
+    "Aún no lo sé"
+   ],
+   "field": "travel_timing",
+   "emoji": "🗓️",
+   "label": "Fecha",
+   "hot": [
+    0,
+    1
+   ]
+  }
+ ],
+ "summary_intro": "Esto es lo que recibiría el equipo de Exoticca:",
+ "summary_marker": "Esto es lo que",
+ "closing": "Así funciona: cada visitante atendido y cualificado en menos de un minuto, con los datos ya en vuestro CRM. Demo preparada por Landbot para Exoticca.",
+ "card_badge": "Lead listo · prioridad alta",
+ "error_text": "Eso no parece correcto. ¿Puedes revisarlo?",
+ "agent_error": "Perdona, no te he entendido. ¿Quieres ver los viajes que encajan contigo?",
+ "agent_exit": "El visitante quiere ver viajes para él, reservar, pedir presupuesto o hablar con un experto.",
+ "agent_instructions": "Eres un asistente de demostración construido por Landbot para enseñar al equipo de marketing de Exoticca lo que un agente de IA podría hacer en exoticca.com/es. Hablas en español de España y tratas de tú.\n\nSolo puedes hablar de lo que se ve en su web: Exoticca vende circuitos de varios días con vuelos incluidos a destinos de África, América, Asia, Europa y Oceanía; se puede buscar por estilo de viaje (cultura, safari, aventura, naturaleza, playa, multidestino, navega & explora) y por perfil (familia, parejas, viajar solo, senior); destacan experiencias extraordinarias, asistencia 24/7 y un programa de recompensas, Exoticca GO; se puede reservar online o hablar con un experto por teléfono.\n\nReglas estrictas: nunca des precios, descuentos, ofertas, fechas de salida, disponibilidad ni condiciones de pago o cancelación; si te lo piden, di que un experto de Exoticca se lo confirma. Nunca pidas datos sensibles (DNI, pasaporte, datos bancarios, salud). Nunca inventes nada que no esté en la web; si no lo sabes, dilo y ofrece ver viajes para él. Si te preguntan, di que eres una demo construida por Landbot. Responde en 2-3 frases cortas, sin markdown ni listas, y termina la mayoría de respuestas ofreciendo ver viajes para él.\n\nSal en cuanto el visitante quiera ver viajes para él, reservar, pedir presupuesto, preguntar precios para su caso o hablar con un experto.",
+ "routing": {
+  "file_title": "Tu solicitud",
+  "file_done": "Lo que recibe el equipo de Exoticca",
+  "route_label": "Ruta",
+  "name_label": "Nombre",
+  "phone_label": "Teléfono",
+  "hot_text": "Tienes destino en mente y fechas cerca. Un experto en viajes de Exoticca puede llamarte hoy para enseñarte los circuitos que encajan y resolver tus dudas.",
+  "name_q": "¿Por quién pregunto cuando te llamen?",
+  "phone_q": "¿Y en qué teléfono te localizan mejor?",
+  "warm_text": "Sin prisa. Te enviamos por email los circuitos que encajan contigo para que los mires con calma.",
+  "email_q": "¿A qué email te lo enviamos?",
+  "cold_text": "Exoticca vende circuitos con vuelos incluidos fuera de España, así que una escapada por España no es algo que tengamos. Si te apetece cruzar la frontera, tenemos viajes por África, América, Asia, Europa y Oceanía.",
+  "hot_label": "Lead caliente. Llamar hoy",
+  "warm_label": "Nurturing. Secuencia de emails",
+  "cold_label": "No encaja. Viaje dentro de España",
+  "hot_closing": "En la versión real, este lead entra en tu CRM y un experto en viajes recibe el aviso al momento. Demo preparada por Landbot para Exoticca.",
+  "warm_closing": "En la versión real, este lead entra en tu secuencia de emails con todas sus respuestas. Demo preparada por Landbot para Exoticca.",
+  "cold_closing": "Filtrado con amabilidad, para que tu equipo no gaste ninguna llamada en él. Demo preparada por Landbot para Exoticca."
+ }
 }
