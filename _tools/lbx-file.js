@@ -79,9 +79,13 @@
             lastBotText = txt;
           }
         }
+        var lastBot = -1;
+        for (var lb = msgs.length - 1; lb >= 0; lb--) { if (msgs[lb].getAttribute('data-lb-author') !== 'user') { lastBot = lb; break; } }
         for (var j = 0; j < msgs.length; j++) {
           var past = j < lastUser;
           if (msgs[j].classList.contains('lbx-past') !== past) msgs[j].classList.toggle('lbx-past', past);
+          var cur = j === lastBot && lastBot > lastUser;
+          if (msgs[j].classList.contains('lbx-current') !== cur) msgs[j].classList.toggle('lbx-current', cur);
         }
         var bubbles = document.querySelectorAll('[data-lb-part="message"][data-lb-author="bot"] [data-lb-part="message-bubble"]');
         var after = false;

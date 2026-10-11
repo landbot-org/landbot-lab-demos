@@ -74,8 +74,11 @@ body.lbx-active [data-lb-part="window"] { padding-top:96px; }
 body.lbx-focus .lbx-past { display:none; }
 body.lbx-focus [data-lb-part="message-avatar"] { display:none; }
 body.lbx-focus [data-lb-part="message"][data-lb-author="bot"] [data-lb-part="message-bubble"] {
-  background:transparent; border:none; padding:2px 2px; font-size:19px; font-weight:600; line-height:1.35; letter-spacing:-.01em; }
-body.lbx-focus [data-lb-part="message"][data-lb-author="user"] { display:none; }
+  background:transparent; border:none; padding:2px 2px; font-size:16px; font-weight:500; line-height:1.45; color:#3d4452; }
+body.lbx-focus .lbx-current[data-lb-part="message"][data-lb-author="bot"] [data-lb-part="message-bubble"] {
+  font-size:19px; font-weight:600; line-height:1.35; letter-spacing:-.01em; color:#011835; }
+body.lbx-focus [data-lb-part="message"][data-lb-author="user"] [data-lb-part="message-bubble"] {
+  background:#ebf4ff; color:#011835; border:1px solid #c9dcf5; font-size:14px; font-weight:600; padding:7px 13px; }
 
 /* ---------- answers ---------- */
 [data-lb-part="options-prompt"] { display:none; }
