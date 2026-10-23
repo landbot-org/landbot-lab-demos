@@ -43,12 +43,8 @@
   <script>
     import('https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs').then(function () {
       var lb = new window.Landbot.Livechat({ configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-3538448-WT0U10MAZGNF7REQ/index.json' });
-      var opened = false;
-      function openOnce() { if (opened || window.innerWidth <= 700) return; opened = true; lb.open(); }
-      lb.onLoad(function () { setTimeout(openOnce, 2500); });
-      setTimeout(openOnce, 2500 + 6000); // onLoad no reproduce el evento si ya pasó
-      // los CTA de la captura abren el chat, como haría la web real
-      document.querySelectorAll('.hot').forEach(function (b) { b.addEventListener('click', function () { opened = true; lb.open(); }); });
+      // sin apertura automática: lo abren el lanzador y los CTA de la captura, como haría la web real
+      document.querySelectorAll('.hot').forEach(function (b) { b.addEventListener('click', function () { lb.open(); }); });
     });
   </script>
 </body>
